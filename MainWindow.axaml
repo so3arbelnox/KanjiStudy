@@ -1,0 +1,53 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
+        Width="800" Height="600"
+        x:Class="KanjiStudy.MainWindow"
+        Title="KanjiStudy">
+
+  <Grid Background="{DynamicResource ResourceKey=PrimaryBackground}" ColumnDefinitions="Auto, *">
+    <Border Grid.Column="0" Padding="20" Background="{DynamicResource ResourceKey=PrimaryBackgroundGradient}">
+      <Grid RowDefinitions="*, Auto">
+        <StackPanel Grid.Row="0" Spacing="3">
+          <Image Source="/Assets/Images/kanji_logo_transparent.png" Width="100"></Image>
+          <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
+              <StackPanel Orientation="Horizontal">
+                  <Label Classes="icon" Content="&#xe2c2;"></Label>
+			      <Label Content="Home"></Label>
+              </StackPanel>
+          </Button>
+          <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
+              <StackPanel Orientation="Horizontal">
+                  <Label Classes="icon" Content="&#xe270;"></Label>
+			      <Label Content="Process"></Label>
+              </StackPanel>
+          </Button>
+          <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
+            <StackPanel Orientation="Horizontal">
+            <Label Classes="icon" Content="&#xe034;"></Label>
+			<Label Content="Actions"></Label>
+          </StackPanel>
+          </Button>
+          <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
+            <StackPanel Orientation="Horizontal">
+            <Label Classes="icon" Content="&#xe34e;"></Label>
+			<Label Content="Reporter"></Label>
+          </StackPanel>
+          </Button>
+          <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
+            <StackPanel Orientation="Horizontal">
+            <Label Classes="icon" Content="&#xe1a0;"></Label>
+			<Label Content="History"></Label>
+          </StackPanel>
+          </Button>
+        </StackPanel>
+
+        <Button Classes="transparent" Grid.Row="1">
+            <Label Padding="0 0 0 5" Classes="icon" Content="&#xe272;"></Label>
+        </Button>
+      </Grid>  
+    </Border>
+  </Grid>
+</Window>
