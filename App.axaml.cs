@@ -1,6 +1,8 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using KanjiStudy.ViewModels;
+using KanjiStudy.Views;
 
 namespace KanjiStudy
 {
@@ -15,7 +17,10 @@ namespace KanjiStudy
         {
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                desktop.MainWindow = new MainWindow();
+                desktop.MainWindow = new MainView
+                {
+                    DataContext = new MainViewModel()
+                };
             }
 
             base.OnFrameworkInitializationCompleted();

@@ -20,6 +20,14 @@
   <Style Selector="Window">
 	  <Setter Property="FontFamily" Value="{DynamicResource ResourceKey=AkkoPro}"></Setter>
   </Style>
+
+  <Style Selector="Border">
+      <Setter Property="Transitions">
+		  <Transitions>
+			  <DoubleTransition Property="Width" Duration="0:0:0.1"></DoubleTransition>
+          </Transitions>
+      </Setter>
+  </Style>
   <Style Selector="Button">
     <Setter Property="FontSize" Value="20"></Setter>
     <Setter Property="Padding" Value="10 12 10 5"></Setter>
@@ -47,15 +55,20 @@
         <Setter Property="RenderTransform" Value="scale(1.2)"></Setter>
     </Style>
 
-  <Style Selector="Button:pointerover /template/ ContentPresenter">
-    <Setter Property="Foreground" Value="{DynamicResource ResourceKey=PrimaryHoverForeground}"></Setter>
-    <Setter Property="Background" Value="{DynamicResource ResourceKey=PrimaryHoverBackground}"></Setter>
-  </Style>
+      <Style Selector="Button:pointerover /template/ ContentPresenter">
+        <Setter Property="Foreground" Value="{DynamicResource ResourceKey=PrimaryHoverForeground}"></Setter>
+        <Setter Property="Background" Value="{DynamicResource ResourceKey=PrimaryHoverBackground}"></Setter>
+      </Style>
 
-      <Style Selector="Button.transparent">
+    <Style Selector="Button.active /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource ResourceKey=PrimaryActiveBackground}"></Setter>
+    </Style>
+
+  <Style Selector="Button.transparent">
 	  <Setter Property="Background" Value="Transparent"></Setter>
   </Style>
-          <Style Selector="Button.transparent Label.icon">
+  
+  <Style Selector="Button.transparent Label.icon">
 	  <Setter Property="FontFamily" Value="{DynamicResource ResourceKey=Phosphor}"></Setter>
   </Style>
 

@@ -4,42 +4,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
         Width="800" Height="600"
-        x:Class="KanjiStudy.MainWindow"
+        x:Class="KanjiStudy.Views.MainView"
+		xmlns:vm="clr-namespace:KanjiStudy.ViewModels"
+        xmlns:view="clr-namespace:KanjiStudy.Views"
+		x:DataType="vm:MainViewModel"
         Title="KanjiStudy">
 
+	<Design.DataContext>
+		<vm:MainViewModel></vm:MainViewModel>
+	</Design.DataContext>
+	
   <Grid Background="{DynamicResource ResourceKey=PrimaryBackground}" ColumnDefinitions="Auto, *">
-    <Border Grid.Column="0" Padding="20" Background="{DynamicResource ResourceKey=PrimaryBackgroundGradient}">
+    
+      <ContentControl Grid.Column="1" Content="{Binding CurrentPage}"></ContentControl>
+      <Border Grid.Column="0" Padding="20" Background="{DynamicResource ResourceKey=PrimaryBackgroundGradient}" Width="{Binding SideMenuWidth}">
       <Grid RowDefinitions="*, Auto">
         <StackPanel Grid.Row="0" Spacing="3">
-          <Image Source="/Assets/Images/kanji_logo_transparent.png" Width="100"></Image>
-          <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
+          <Image PointerPressed="Image_PointerPressed" Source="avares://KanjiStudy/Assets/Images/kanji_logo_transparent.png" Width="100" IsVisible="{Binding SideMenuExpaned}"></Image>
+          <Image PointerPressed="Image_PointerPressed" Source="avares://KanjiStudy/Assets/Images/kanji_logo_no_text_transparent.png" Width="40" IsVisible="{Binding !SideMenuExpaned}"></Image>
+
+          <Button HorizontalAlignment="Stretch" Classes.active="{Binding HomePageIsActive}" Command="{Binding GoToHomeCommand}" Click="Home_Button_Clicked">
               <StackPanel Orientation="Horizontal">
                   <Label Classes="icon" Content="&#xe2c2;"></Label>
-			      <Label Content="Home"></Label>
+			      <Label Content="Home" IsVisible="{Binding SideMenuExpaned}"></Label>
               </StackPanel>
           </Button>
           <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
               <StackPanel Orientation="Horizontal">
                   <Label Classes="icon" Content="&#xe270;"></Label>
-			      <Label Content="Process"></Label>
+			      <Label Content="Options" IsVisible="{Binding SideMenuExpaned}"></Label>
               </StackPanel>
           </Button>
           <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
             <StackPanel Orientation="Horizontal">
             <Label Classes="icon" Content="&#xe034;"></Label>
-			<Label Content="Actions"></Label>
+			<Label Content="Study" IsVisible="{Binding SideMenuExpaned}"></Label>
           </StackPanel>
           </Button>
-          <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
+          <Button HorizontalAlignment="Stretch" Classes.active="{Binding DeckPageIsActive}" Command="{Binding GoToDeckCommand}" Click="Home_Button_Clicked">
             <StackPanel Orientation="Horizontal">
             <Label Classes="icon" Content="&#xe34e;"></Label>
-			<Label Content="Reporter"></Label>
+			<Label Content="Decks" IsVisible="{Binding SideMenuExpaned}"></Label>
           </StackPanel>
           </Button>
           <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
             <StackPanel Orientation="Horizontal">
             <Label Classes="icon" Content="&#xe1a0;"></Label>
-			<Label Content="History"></Label>
+			<Label Content="History" IsVisible="{Binding SideMenuExpaned}"></Label>
           </StackPanel>
           </Button>
         </StackPanel>
