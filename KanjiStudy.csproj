@@ -15,6 +15,7 @@
     <None Remove="Assets\Fonts\Phosphor-Light.ttf" />
     <None Remove="Assets\Fonts\Phosphor-Thin.ttf" />
     <None Remove="Assets\Fonts\Phosphor.ttf" />
+    <None Remove="Assets\Images\background.svg" />
     <None Remove="Assets\Images\kanji_logo.png" />
     <None Remove="Assets\Images\kanji_logo_no_text_transparent.png" />
     <None Remove="Assets\Images\kanji_logo_no_text_transparent_small.png" />
@@ -28,6 +29,7 @@
     <AvaloniaResource Include="Assets\Fonts\Phosphor-Light.ttf" />
     <AvaloniaResource Include="Assets\Fonts\Phosphor-Thin.ttf" />
     <AvaloniaResource Include="Assets\Fonts\Phosphor.ttf" />
+    <AvaloniaResource Include="Assets\Images\background.svg" />
     <AvaloniaResource Include="Assets\Images\kanji_logo.png" />
     <AvaloniaResource Include="Assets\Images\kanji_logo_no_text_transparent.png" />
     <AvaloniaResource Include="Assets\Images\kanji_logo_no_text_transparent_small.png" />
@@ -46,6 +48,7 @@
       <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.5" />
     <PackageReference Include="Svg.Controls.Skia.Avalonia" Version="11.3.9.2" />
   </ItemGroup>
 
@@ -56,6 +59,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\SettingsPageView.axaml.cs">
+      <DependentUpon>SettingsPageView.axaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\MainView.axaml.cs">
       <DependentUpon>MainView.axaml</DependentUpon>
     </Compile>

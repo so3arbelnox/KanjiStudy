@@ -4,8 +4,13 @@ using System.Text;
 
 namespace KanjiStudy.ViewModels
 {
-    public partial class HomePageViewModel : ViewModelBase
+    public partial class HomePageViewModel : PageViewModel
     {
+        public HomePageViewModel()
+        {
+            PageName = Data.ApplicationPageNames.Home;
+        }
+
         public string Test { get; set; } = "Home";
     }
 }

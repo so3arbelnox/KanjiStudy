@@ -4,6 +4,8 @@ using Avalonia.Platform;
 using Avalonia.Svg.Skia;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using KanjiStudy.Data;
+using KanjiStudy.Factories;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,6 +20,8 @@ namespace KanjiStudy.ViewModels
             public int SideMenuImageWidth => SideMenuExpaned ? 100 : 40;
         */
 
+        private PageFactory _pageFactory;
+
         private const string buttonActiveClass = "active";
 
         [ObservableProperty]
@@ -31,17 +35,25 @@ namespace KanjiStudy.ViewModels
         [ObservableProperty]
         [NotifyPropertyChangedFor(nameof(HomePageIsActive))]
         [NotifyPropertyChangedFor(nameof(DeckPageIsActive))]
-        private ViewModelBase _currentPage;
+        [NotifyPropertyChangedFor(nameof(SettingsPageIsActive))]
+        private PageViewModel _currentPage;
 
-        public bool HomePageIsActive => CurrentPage == _homePage;
-        public bool DeckPageIsActive => CurrentPage == _deckPage;
+        public bool HomePageIsActive => CurrentPage.PageName == ApplicationPageNames.Home;
+        public bool DeckPageIsActive => CurrentPage.PageName == ApplicationPageNames.Deck;
+        public bool SettingsPageIsActive => CurrentPage.PageName == ApplicationPageNames.Deck;
 
-        private readonly HomePageViewModel _homePage = new();
-        private readonly DeckPageViewModel _deckPage = new();
-
+        /// <summary>
+        /// Design time only constructor
+        /// </summary>
         public MainViewModel()
         {
-            CurrentPage = _homePage;
+            CurrentPage = new SettingsPageViewModel();
+        }
+
+        public MainViewModel(PageFactory pageFactory)
+        {
+            _pageFactory = pageFactory;
+            GoToHome();
         }
 
         [RelayCommand]
@@ -53,13 +65,19 @@ namespace KanjiStudy.ViewModels
         [RelayCommand]
         private void GoToHome()
         {
-            CurrentPage = _homePage;
+            CurrentPage = _pageFactory.GetPageViewModel(ApplicationPageNames.Home);
         }
 
         [RelayCommand]
         private void GoToDeck()
         {
-            CurrentPage = _deckPage;
+            CurrentPage = _pageFactory.GetPageViewModel(ApplicationPageNames.Deck);
+        }
+
+        [RelayCommand]
+        private void GoToSettings()
+        {
+            CurrentPage = _pageFactory.GetPageViewModel(ApplicationPageNames.Settings);
         }
     }
 }

@@ -1,0 +1,145 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="900"
+             Foreground="{DynamicResource PrimaryForeground}"
+             Background="{DynamicResource PrimaryBackground}"
+             xmlns:vm="clr-namespace:KanjiStudy.ViewModels"
+             x:DataType="vm:SettingsPageViewModel"
+             x:Class="KanjiStudy.Views.SettingsPageView">
+
+    	<Design.DataContext>
+		<vm:SettingsPageViewModel></vm:SettingsPageViewModel>
+	</Design.DataContext>
+  <Grid ColumnDefinitions="*,*" RowDefinitions="Auto, *">
+	  <!-- Header -->
+      <Grid Grid.ColumnSpan="2">
+		  <Image Source="{SvgImage /Assets/Images/background.svg}" Height="100" Stretch="UniformToFill" />
+          <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+			  <Label HorizontalAlignment="Center" Content="Settings"></Label>
+              <Label HorizontalAlignment="Center" Content="Version 0.0.1 Beta"></Label>
+              <Label HorizontalAlignment="Center" Content="Last Build 3/24/2026 19:46"></Label>
+          </StackPanel>
+      </Grid>
+
+      <!-- Left Side Content -->
+      <StackPanel Grid.Column="0" Grid.Row="1" Spacing="15" Margin="15">
+          <!-- General -->
+        <StackPanel>
+	        <Label Content="General"></Label>
+            <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, Auto, Auto">
+                <!-- Unlock Content -->
+                <TextBlock Text="Test content goes here to test text wrapping in a text block" TextWrapping="Wrap"></TextBlock>
+                <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Classes="icon" Content="&#xe2fe;"></Label>
+			            <Label Content="Unlock Content"></Label>
+                    </StackPanel>
+                </Button>
+
+                <!-- Display card number -->
+                <TextBlock Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Display card number in study mode">
+			        <CheckBox Grid.Row="1" Grid.Column="1"></CheckBox>
+                </TextBlock>
+
+                <!-- Show furigana -->
+                <TextBlock Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Show furigana in study mode">
+			        <CheckBox Grid.Row="2" Grid.Column="1"></CheckBox>
+                </TextBlock>
+            </Grid>
+        </StackPanel>
+
+        <!-- Deck locations -->
+        <StackPanel>
+		<Label Content="Locations"></Label>
+            <Grid ShowGridLines="True" ColumnDefinitions="*,Auto">
+			    <StackPanel>
+				    <TextBlock TextWrapping="Wrap" Text="Add a list of decks to auto-load on start"></TextBlock>
+                    <TextBlock TextWrapping="Wrap" Text="*Decks can be manually loaded in study mode."></TextBlock>
+                </StackPanel>
+                <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch">
+                    <StackPanel Orientation="Horizontal">
+			            <Label Content="+ Folder"></Label>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <ListBox ItemsSource="{Binding LocationPaths}"></ListBox>
+        </StackPanel>
+    </StackPanel>
+
+      <!-- Right Side Content -->
+      <StackPanel Grid.Column="1" Grid.Row="1" Spacing="15" Margin="15">
+          <!-- Content -->
+          <StackPanel>
+            <Label Content="Kanji Study"></Label>
+              <TextBlock TextWrapping="Wrap">
+                  Kanji Study is an app that does cool things. Actually I'm just trying to fill content 
+                  that I plan to add later.
+                  <LineBreak /><LineBreak />
+                  Thanks for listening.
+              </TextBlock>
+              <ComboBox></ComboBox>
+              <Label Content="Test"></Label>
+          </StackPanel>
+
+          <!-- Content Row 2 -->
+          <StackPanel Spacing="15">
+			  <Label Content="Section 2"></Label>
+              <TextBlock TextWrapping="Wrap">
+                  Here is more text that explains this section a bit.
+              </TextBlock>
+              <Grid ColumnDefinitions="*,*,*">
+                  <ComboBox Grid.Column="0" HorizontalAlignment="Stretch"></ComboBox>
+                  <TextBox Grid.Column="1"></TextBox>
+                  <TextBox Grid.Column="2"></TextBox>
+            </Grid>
+              <StackPanel Orientation="Horizontal">
+                <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Classes="icon" Content="&#xe23e;"></Label>
+			            <Label Content="Login"></Label>
+                    </StackPanel>
+                </Button>
+                <Button Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Classes="icon" Content="&#xe094;"></Label>
+			            <Label Content="Refresh"></Label>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+              <Label Content="Test"></Label>
+          </StackPanel>
+
+          <!-- Content Row 3 -->
+          <StackPanel Spacing="15">
+			  <Label Content="Section 3"></Label>
+              <TextBlock TextWrapping="Wrap">
+                  Here is more text that explains this section a bit.
+              </TextBlock>
+
+              <StackPanel Orientation="Horizontal">
+                <Button>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Classes="icon" Content="&#xec54;"></Label>
+			            <Label Content="Button 1"></Label>
+                    </StackPanel>
+                </Button>
+                <Button>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Classes="icon" Content="&#xe20c;"></Label>
+			            <Label Content="Button 2"></Label>
+                    </StackPanel>
+                </Button>
+                <Button>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Classes="icon" Content="&#xe5de;"></Label>
+			            <Label Content="Button 3"></Label>
+                    </StackPanel>
+                </Button>
+              </StackPanel>
+          </StackPanel>
+      </StackPanel>
+
+  </Grid>
+</UserControl>
