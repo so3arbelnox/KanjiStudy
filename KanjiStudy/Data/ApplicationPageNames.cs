@@ -9,6 +9,7 @@ namespace KanjiStudy.Data
         Unknown,
         Home,
         Deck,
+        Study,
         Settings
     }
 }

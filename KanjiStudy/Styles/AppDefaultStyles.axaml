@@ -29,7 +29,7 @@
       </Setter>
   </Style>
   <Style Selector="Button">
-    <Setter Property="FontSize" Value="20"></Setter>
+    <Setter Property="FontSize" Value="{DynamicResource ButtonFontSize}"></Setter>
     <Setter Property="Padding" Value="10 12 10 5"></Setter>
     <Setter Property="Foreground" Value="{DynamicResource ResourceKey=PrimaryText}"></Setter>
     <Setter Property="Background" Value="{DynamicResource ResourceKey=PrimaryBackground}"></Setter>
@@ -67,12 +67,42 @@
   <Style Selector="Button.transparent">
 	  <Setter Property="Background" Value="Transparent"></Setter>
   </Style>
-  
+
   <Style Selector="Button.transparent Label.icon">
 	  <Setter Property="FontFamily" Value="{DynamicResource ResourceKey=Phosphor}"></Setter>
   </Style>
 
   <Style Selector="Button.transparent:pointerover /template/ ContentPresenter">
     <Setter Property="Background" Value="Transparent"></Setter>
+  </Style>
+
+  <Style Selector="Button:disabled /template/ ContentPresenter">
+    <Setter Property="Opacity" Value="0.45"></Setter>
+  </Style>
+
+  <Style Selector="Button.primary">
+    <Setter Property="Background" Value="{DynamicResource ResourceKey=PrimaryActiveBackground}"></Setter>
+    <Setter Property="Foreground" Value="White"></Setter>
+    <Setter Property="FontSize" Value="22"></Setter>
+    <Setter Property="FontWeight" Value="Bold"></Setter>
+    <Setter Property="Padding" Value="24 14"></Setter>
+  </Style>
+
+  <Style Selector="Button.primary:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#7D45E8"></Setter>
+    <Setter Property="Foreground" Value="White"></Setter>
+  </Style>
+
+  <Style Selector="Button.danger">
+    <Setter Property="Background" Value="#8A2846"></Setter>
+    <Setter Property="Foreground" Value="White"></Setter>
+    <Setter Property="FontSize" Value="22"></Setter>
+    <Setter Property="FontWeight" Value="Bold"></Setter>
+    <Setter Property="Padding" Value="24 14"></Setter>
+  </Style>
+
+  <Style Selector="Button.danger:pointerover /template/ ContentPresenter">
+    <Setter Property="Background" Value="#B23359"></Setter>
+    <Setter Property="Foreground" Value="White"></Setter>
   </Style>
 </Styles>

@@ -1,15 +1,12 @@
-<Window xmlns="https://github.com/avaloniaui"
+<UserControl xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="1400" d:DesignHeight="800"
-        Width="1400" Height="800"
-        MinWidth="1400" MinHeight="800"
         x:Class="KanjiStudy.Views.MainView"
 		xmlns:vm="clr-namespace:KanjiStudy.ViewModels"
         xmlns:view="clr-namespace:KanjiStudy.Views"
-		x:DataType="vm:MainViewModel"
-        Title="KanjiStudy">
+		x:DataType="vm:MainViewModel">
 
 	<Design.DataContext>
 		<vm:MainViewModel></vm:MainViewModel>
@@ -18,7 +15,7 @@
   <Grid Background="{DynamicResource ResourceKey=PrimaryBackground}" ColumnDefinitions="Auto, *">
     
       <ContentControl Grid.Column="1" Content="{Binding CurrentPage}"></ContentControl>
-      <Border Grid.Column="0" Padding="20" Background="{DynamicResource ResourceKey=PrimaryBackgroundGradient}" Width="{Binding SideMenuWidth}">
+      <Border Grid.Column="0" Padding="{Binding SideMenuPadding}" Background="{DynamicResource ResourceKey=PrimaryBackgroundGradient}" Width="{Binding SideMenuWidth}">
       <Grid RowDefinitions="*, Auto">
         <StackPanel Grid.Row="0" Spacing="3">
           <Image PointerPressed="Image_PointerPressed" Source="avares://KanjiStudy/Assets/Images/kanji_logo_transparent.png" Width="100" IsVisible="{Binding SideMenuExpaned}"></Image>
@@ -36,7 +33,7 @@
 			      <Label Content="Options" IsVisible="{Binding SideMenuExpaned}"></Label>
               </StackPanel>
           </Button>
-          <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
+          <Button HorizontalAlignment="Stretch" Classes.active="{Binding StudyPageIsActive}" Command="{Binding GoToStudyCommand}" Click="Home_Button_Clicked">
             <StackPanel Orientation="Horizontal">
             <Label Classes="icon" Content="&#xe034;"></Label>
 			<Label Content="Study" IsVisible="{Binding SideMenuExpaned}"></Label>
@@ -62,4 +59,4 @@
       </Grid>  
     </Border>
   </Grid>
-</Window>
+</UserControl>

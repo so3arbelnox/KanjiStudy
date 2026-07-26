@@ -1,0 +1,36 @@
+Title=Japanese Family
+----
+1|次男|じなん　second son
+1|三男|さんなん　third son
+1|長男|ちょうなん　eldest son; first-born son
+1|次女|じじょ　second daughter
+1|三女|さんじょ　third daughter
+1|長女|ちょうじょ　eldest daughter; first-born daughter​
+1|伯父さん|おじさん　uncle; mister
+1|伯母さん|おばさん　aunt
+1|従兄弟|いとこ　cousin (male)
+1|従姉妹|いとこ　cousin (female)
+1|お祖父さん|おじいさん　grandfather
+1|祖父|そふ　grandfather
+1|お祖母さん|おばあさん　grandmother
+1|祖母|そぼ　grandmother
+1|お父さん|おとうさん　father
+1|父親|ちちおや　father
+1|母親|ははおや　mother
+1|お母さん|おかあさん　mother
+1|両親|りょうしん　parents; both parents
+1|姉妹|しまい　sisters
+1|兄弟|きょうだい　siblings; brothers and sisters
+1|末っ子|すえっこ　youngest child
+1|長子|ちょうし　oldest child
+1|姪っ子|めいっこ　niece
+1|姪御|めいご　(another person's) niece
+1|甥っ子|おいっこ　nephew
+1|甥御|おいご　(another person's) nephew
+1|妹|いもうと　younger sister
+1|姉|あね　older sister
+1|お姉さん|おねえさん　oldest sister; young lady; miss
+1|弟|おとうと　younger brother
+1|兄|あに　older brother
+1|お兄さん|おにいさん　older brother; young man
+1|孫|まご　grandchild

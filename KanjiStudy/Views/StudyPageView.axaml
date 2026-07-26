@@ -1,0 +1,125 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="900"
+             Foreground="{DynamicResource PrimaryForeground}"
+             Background="{DynamicResource PrimaryBackground}"
+             xmlns:vm="clr-namespace:KanjiStudy.ViewModels"
+             xmlns:models="clr-namespace:KanjiStudy.Models"
+             x:DataType="vm:StudyPageViewModel"
+             x:Class="KanjiStudy.Views.StudyPageView">
+
+  <Design.DataContext>
+    <vm:StudyPageViewModel></vm:StudyPageViewModel>
+  </Design.DataContext>
+
+  <Grid Margin="30">
+
+    <!-- Select Deck -->
+    <ScrollViewer IsVisible="{Binding IsSelectDeckStage}" HorizontalAlignment="Center" HorizontalScrollBarVisibility="Disabled">
+      <StackPanel Spacing="15" Width="420" Margin="0 20">
+        <Label HorizontalAlignment="Center" FontSize="28" Content="Study"></Label>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Text="Choose a deck file to start studying."></TextBlock>
+        <Button HorizontalAlignment="Center" Click="BrowseForDeck_Click">
+          <StackPanel Orientation="Horizontal">
+            <Label Classes="icon" Content="&#xe34e;"></Label>
+            <Label Content="Choose Deck File"></Label>
+          </StackPanel>
+        </Button>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Foreground="IndianRed" Text="{Binding LoadError}" IsVisible="{Binding HasLoadError}"></TextBlock>
+
+        <StackPanel IsVisible="{Binding HasBundledDecks}" Spacing="8" Margin="0 15 0 0">
+          <TextBlock HorizontalAlignment="Center" Text="Or pick a sample deck:"></TextBlock>
+          <ItemsControl ItemsSource="{Binding BundledDecks}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate x:DataType="models:BundledDeckOption">
+                <Button HorizontalAlignment="Stretch" Margin="0 3" Tag="{Binding FilePath}" Click="BundledDeck_Click">
+                  <Label Content="{Binding Title}"></Label>
+                </Button>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </StackPanel>
+      </StackPanel>
+    </ScrollViewer>
+
+    <!-- Options -->
+    <ScrollViewer IsVisible="{Binding IsOptionsStage}" HorizontalAlignment="Center" HorizontalScrollBarVisibility="Disabled">
+      <StackPanel Spacing="12" Width="420" Margin="0 20">
+        <Label HorizontalAlignment="Center" FontSize="24" Content="{Binding DeckTitle}"></Label>
+        <TextBlock HorizontalAlignment="Center" Text="{Binding DeckCardCountText}"></TextBlock>
+
+        <CheckBox Content="Limit amount" IsChecked="{Binding LimitAmount}"></CheckBox>
+        <StackPanel Orientation="Horizontal" IsEnabled="{Binding LimitAmount}" Spacing="10">
+          <Label VerticalAlignment="Center" Content="Amount:"></Label>
+          <TextBox Width="100" Text="{Binding Amount}"></TextBox>
+        </StackPanel>
+
+        <CheckBox Content="Study a range of card numbers" IsChecked="{Binding UseRange}"></CheckBox>
+        <StackPanel Orientation="Horizontal" IsEnabled="{Binding UseRange}" Spacing="10">
+          <Label VerticalAlignment="Center" Content="From:"></Label>
+          <TextBox Width="90" Text="{Binding RangeStart}"></TextBox>
+          <Label VerticalAlignment="Center" Content="To:"></Label>
+          <TextBox Width="90" Text="{Binding RangeEnd}"></TextBox>
+        </StackPanel>
+
+        <CheckBox Content="Flip front and back" IsChecked="{Binding ReverseCard}"></CheckBox>
+        <CheckBox Content="Hide hiragana" IsChecked="{Binding HideHiragana}" IsEnabled="{Binding ReverseCard}"></CheckBox>
+
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Foreground="IndianRed" Text="{Binding LoadError}" IsVisible="{Binding HasLoadError}"></TextBlock>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+          <Button Classes="transparent" Command="{Binding ChangeDeckCommand}">
+            <Label Content="Change Deck"></Label>
+          </Button>
+          <Button Classes="primary" Command="{Binding StartStudyingCommand}">
+            <Label Content="GO!"></Label>
+          </Button>
+        </StackPanel>
+      </StackPanel>
+    </ScrollViewer>
+
+    <!-- Studying -->
+    <Grid IsVisible="{Binding IsStudyingStage}" RowDefinitions="*,Auto">
+      <Border Grid.Row="0" Background="{DynamicResource PrimaryBackgroundGradient}" CornerRadius="12" Padding="20">
+        <Grid>
+          <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap" MaxWidth="850" Padding="10 0" FontSize="{Binding CardFontSize}" Text="{Binding CardText}" ToolTip.Tip="{Binding CardHint}"></TextBlock>
+
+          <TextBlock Text="{Binding CardIdText}" IsVisible="{Binding ShowCardId}" VerticalAlignment="Bottom" HorizontalAlignment="Left"></TextBlock>
+          <TextBlock Text="{Binding ProgressText}" VerticalAlignment="Bottom" HorizontalAlignment="Right"></TextBlock>
+
+          <!-- Round summary overlay -->
+          <Border IsVisible="{Binding ShowRoundSummary}" Background="#CC000000" CornerRadius="12">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="15">
+              <Label HorizontalAlignment="Center" Content="Round Complete!"></Label>
+              <Label HorizontalAlignment="Center" Content="{Binding RoundSummaryText}"></Label>
+              <Button Classes="primary" HorizontalAlignment="Center" Command="{Binding ContinueToNextRoundCommand}">
+                <Label Content="Continue with missed cards"></Label>
+              </Button>
+            </StackPanel>
+          </Border>
+        </Grid>
+      </Border>
+
+      <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="15" Margin="0 15 0 0">
+        <Button Classes="danger" Content="Again" Command="{Binding MarkAgainCommand}" IsEnabled="{Binding CanMarkAgain}"></Button>
+        <Button Classes="primary" Content="{Binding ActionButtonText}" Command="{Binding RevealOrNextCommand}"></Button>
+      </StackPanel>
+    </Grid>
+
+    <!-- Complete -->
+    <StackPanel IsVisible="{Binding IsCompleteStage}" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="15">
+      <Label HorizontalAlignment="Center" FontSize="28" Content="You did it!"></Label>
+      <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+        <Button Classes="primary" Command="{Binding RestartStudyingCommand}">
+          <Label Content="Study Again"></Label>
+        </Button>
+        <Button Classes="transparent" Command="{Binding ChangeDeckCommand}">
+          <Label Content="Change Deck"></Label>
+        </Button>
+      </StackPanel>
+    </StackPanel>
+
+  </Grid>
+</UserControl>

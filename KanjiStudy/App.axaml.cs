@@ -3,6 +3,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using KanjiStudy.Data;
 using KanjiStudy.Factories;
+using KanjiStudy.Services;
 using KanjiStudy.ViewModels;
 using KanjiStudy.Views;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,16 +20,25 @@ namespace KanjiStudy
 
         public override void OnFrameworkInitializationCompleted()
         {
+            BundledDecksInstaller.EnsureInstalled();
+
+            if (OperatingSystem.IsAndroid())
+            {
+                Resources["ButtonFontSize"] = 14.0;
+            }
+
             var collection = new ServiceCollection();
             collection.AddSingleton<MainViewModel>();
             collection.AddTransient<HomePageViewModel>();
             collection.AddTransient<DeckPageViewModel>();
+            collection.AddTransient<StudyPageViewModel>();
             collection.AddTransient<SettingsPageViewModel>();
 
             collection.AddSingleton<Func<ApplicationPageNames, PageViewModel>>(x => name => name switch
             {
                 ApplicationPageNames.Home => x.GetRequiredService<HomePageViewModel>(),
                 ApplicationPageNames.Deck => x.GetRequiredService<DeckPageViewModel>(),
+                ApplicationPageNames.Study => x.GetRequiredService<StudyPageViewModel>(),
                 ApplicationPageNames.Settings => x.GetRequiredService<SettingsPageViewModel>(),
                 _ => throw new InvalidOperationException()
             });
@@ -39,7 +49,14 @@ namespace KanjiStudy
 
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                desktop.MainWindow = new MainView
+                desktop.MainWindow = new MainWindow
+                {
+                    DataContext = services.GetRequiredService<MainViewModel>()
+                };
+            }
+            else if (ApplicationLifetime is ISingleViewApplicationLifetime singleView)
+            {
+                singleView.MainView = new MainView
                 {
                     DataContext = services.GetRequiredService<MainViewModel>()
                 };

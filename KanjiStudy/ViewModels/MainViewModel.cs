@@ -1,4 +1,5 @@
-﻿using Avalonia.Media;
+﻿using Avalonia;
+using Avalonia.Media;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform;
 using Avalonia.Svg.Skia;
@@ -31,16 +32,19 @@ namespace KanjiStudy.ViewModels
         private bool _sideMenuExpaned = true;
 
         public int SideMenuWidth => SideMenuExpaned ? 180 : 90;
+        public Thickness SideMenuPadding => OperatingSystem.IsAndroid() ? new Thickness(10) : new Thickness(20);
 
         [ObservableProperty]
         [NotifyPropertyChangedFor(nameof(HomePageIsActive))]
         [NotifyPropertyChangedFor(nameof(DeckPageIsActive))]
+        [NotifyPropertyChangedFor(nameof(StudyPageIsActive))]
         [NotifyPropertyChangedFor(nameof(SettingsPageIsActive))]
         private PageViewModel _currentPage;
 
         public bool HomePageIsActive => CurrentPage.PageName == ApplicationPageNames.Home;
         public bool DeckPageIsActive => CurrentPage.PageName == ApplicationPageNames.Deck;
-        public bool SettingsPageIsActive => CurrentPage.PageName == ApplicationPageNames.Deck;
+        public bool StudyPageIsActive => CurrentPage.PageName == ApplicationPageNames.Study;
+        public bool SettingsPageIsActive => CurrentPage.PageName == ApplicationPageNames.Settings;
 
         /// <summary>
         /// Design time only constructor
@@ -53,6 +57,7 @@ namespace KanjiStudy.ViewModels
         public MainViewModel(PageFactory pageFactory)
         {
             _pageFactory = pageFactory;
+            SideMenuExpaned = !OperatingSystem.IsAndroid();
             GoToHome();
         }
 
@@ -72,6 +77,12 @@ namespace KanjiStudy.ViewModels
         private void GoToDeck()
         {
             CurrentPage = _pageFactory.GetPageViewModel(ApplicationPageNames.Deck);
+        }
+
+        [RelayCommand]
+        private void GoToStudy()
+        {
+            CurrentPage = _pageFactory.GetPageViewModel(ApplicationPageNames.Study);
         }
 
         [RelayCommand]

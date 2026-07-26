@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 namespace KanjiStudy.Views
 {
-    public partial class MainView : Window
+    public partial class MainView : UserControl
     {
         public MainView()
         {

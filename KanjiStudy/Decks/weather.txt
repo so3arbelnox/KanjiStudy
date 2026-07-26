@@ -1,0 +1,39 @@
+Title=Weather
+----
+1|天気予報|てんきよほう　weather forecast
+1|時々|ときどき　sometimes
+1|後|のち　then
+1|気温|きおん　temperature
+1|湿度|しつど　humidity
+1|確率|かくりつ　chance
+1|晴れ|はれ　sunny
+1|曇り|くもり　cloudy
+1|雨雲|あまぐも　raincloud
+1|雨が降る|あめがふる　to rain
+1|にわか雨|にわかあめ　shower
+1|土砂降り|どしゃぶり　downpour; heavy rain
+1|豪雨|ごうう　heavy rain
+1|嵐になる|あらしになる　to storm
+1|風が吹く|かぜがふく　wind
+1|そよ風|そよかぜ　gentle breeze
+1|突風|とっぷう　gust; strong wind
+1|暴風|ぼうふう　windstorm
+1|雪が降る|ゆきがふる　to snow
+1|雹|ひょう　hail
+1|氷雨|ひさめ　freezing rain
+1|注意報|ちゅういほう　advisory
+1|警報|けいほう　warning
+1|災害|さいがい　disaster
+1|大雨|おおあめ　a lot of rain
+1|大雪|おおゆき　a lot of snow
+1|洪水|こうずい　flood
+1|吹雪|ふぶき　snowstorm
+1|地震|じしん　earthquake
+1|台風|たいふう　typhoon
+1|竜巻|たつまき　tornado
+1|暑い|あつい　hot
+1|暖かい|あたたかい　warm
+1|涼しい|すずしい　cool
+1|寒い|さむい　cold
+1|からっとした|からっとした　dry
+1|じめっとした|じめっとした　muggy

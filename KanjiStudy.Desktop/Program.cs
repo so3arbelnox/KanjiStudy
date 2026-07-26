@@ -1,7 +1,8 @@
 ﻿using System;
 using Avalonia;
+using KanjiStudy;
 
-namespace KanjiStudy
+namespace KanjiStudy.Desktop
 {
     internal class Program
     {

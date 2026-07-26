@@ -1,0 +1,559 @@
+
+1|姪|姪　niece
+1|甥|おい　nephew
+1|実子|じっし　biological child; one's own child
+1|紅一点|こういってん　the lone woman (e.g. bright flower) in a group
+1|イヤイヤ期|イヤイヤいやいやき　terrible twos (developmental stage in toddlers)
+1|弾む|はずむ　to spring; to bound; to bounce; to be encouraged; to get lively
+1|難破船|なんぱせん　wrecked ship
+1|眺望|ちょうぼう　view; vista; panorama; outlook; prospect
+1|餡子|あんこ　red bean paste; red bean jam; anko​
+1|眺める|ながめる　to look at; to gaze at; to watch; to stare at; to get a view of
+1|災難|さいなん　calamity; misfortune; disaster
+1|話が弾む|はなしがはずむ　the conversation becomes lively
+1|硬派|こうは　hard-liners; diehards; hawks; tough boy; man's man
+1|軟派|なんぱ　seducer; smooth talker; ladies' man; picking up women; moderate party
+1|アジト|アジト　hideout; secret base of operations; safe house
+1|運動神経|うんどうしんけい　motor nerve; reflexes; athletic ability; motor coordination
+1|住処|すみか　dwelling; house; home; residence; den (of criminals, demons, etc.); nest
+1|苛める|いじめる　to ill-treat; to bully; to torment; to be tough on (e.g. one's body); to treat harshly
+1|お節|おせち　osechi; food eaten during the New Year's Holidays
+1|満ち潮|みちしお　high tide; high water; full tide
+1|鯛焼き|たいやき　fish-shaped pancake filled with bean jam​
+1|周辺|しゅうへん　circumference; outskirts; environs; around; in the area of
+1|ここら辺|ここらへん　about here; in this neighborhood
+1|焦げ目|こげめ　burn mark; grilled surface (e.g. on a steak)
+1|珊瑚礁|さんごしょう　coral reef
+1|平泳ぎ|ひらおよぎ　breaststroke (swimming)
+1|水っぽい|みずっぽい　watery; soggy
+1|背泳ぎ|せおよぎ　backstroke (swimming)
+1|しっくり来る|しっくりくる　to feel right; to sit well with one; to be happy about; to fit well together
+1|マイブーム|マイブーム　current obsession; current kick; personal obsession
+1|流行り|はやり　fashion; fad; vogue; craze
+1|同心円|どうしんえん　concentric circles
+1|輸出入|ゆしゅつにゅう　export and import
+1|成るべく|なるべく　as (much) as possible; as (much) as one can; wherever practicable; if possible​
+1|中心|ちゅうしん　center; centre; middle
+1|円心|えんしん　center of a circle
+1|税関|ぜいかん　customs
+1|関税|かんぜい　customs (duties); duty; tariff
+1|接待|せったい　entertainment (esp. in the corporate world); treating (to food and drinks)
+1|連れて行く|つれていく　to take (someone to a place); to take (someone) with one; to take along
+1|為れる|される　to be done (to someone or something)​; to do; to be doing
+1|招く|まねく　to invite; to ask; to beckon; to wave someone in
+1|廊下|ろうか　corridor; hallway; passageway
+1|哲学|てつがく　philosophy
+1|奢る|おごる　to treat (someone) to (something); to give (someone) a treat; to live in luxury​
+1|上臈|じょうろう　court lady; noblewoman
+1|深雪|みゆき　snow; deep snow (poetical term)
+1|記録|きろく　record; document; minutes; log; record (e.g. in sports); setting (a record)
+1|録画|ろくが　(video) recording​
+1|反戦|はんせん　anti-war
+1|活動|かつどう　activity (of a person, organization, animal, volcano, etc.); action; operation
+1|苛める|いじめる　to ill-treat; to bully; to torment; to pick on
+1|塩水|しおみず　salt water; brine
+1|満潮|まんちょう　high tide; high water; full tide
+1|干潮|かんちょう　low tide; low water; ebb​
+1|藻掻く|もがく　to struggle; to writhe; to wriggle; to squirm; to act frantically
+1|浜辺|はまべ　beach; foreshore
+1|引き潮|ひきしお　ebb tide
+1|焦げ茶色|こげちゃいろ　dark brown; olive brown
+1|美味|びみ　exquisite flavor (flavour); delectable flavor
+1|籠|かご　basket (shopping, etc.); hamper; cage​
+1|鶴|つる　Crane (bird)​
+1|滑る|すべる　to slide; to glide; to skate; to ski; to fail (an examination); to lose (a position)
+1|微妙|びみょう　subtle; delicate; fine
+1|目出度い|めでたい　happy; auspicious; joyous; naive
+1|踊り|おどり　dance
+1|舞踊|ぶよう　dancing; dance
+1|脈をとる|みゃくをとる　to take someone's pulse
+1|山脈|さんみゃく　mountain range; mountain belt
+1|灯台|とうだい　lighthouse
+1|灯台下暗し|とうだいもとくら　it is darkest under the lamp post; it's hard to see what is under your nose
+1|却下|きゃっか　rejection; dismissal
+1|断る|ことわる　to refuse; to reject; to dismiss; to turn down; to inform; to give notice
+1|月並み|つきなみ　every month; trite; commonplace
+1|平凡|へいぼん　ordinary; common; commonplace; mediocre; unremarkable
+1|ものである|ものである　is something that; is that which
+1|大したことない|たいしたことない　trivial; not amounting to much
+1|筋違い|すじちがい　cramp; sprain; unreasonableness; absurdity
+1|日常茶飯|にちじょうさはん　everyday occurrence​
+1|最も|もっとも　most; extremely
+1|予防接種|よぼうせっしゅ　vaccination; inoculation; immunization
+1|阿吽の呼吸|あうんのこきゅう　the harmonizing, mentally and physically, of two parties engaged in an activity
+1|ツーカーの仲|ツーカーのなか　relationship based on intuitive understanding of each other
+1|死語|しご　dead language; extinct language; obsolete word
+1|更に|さらに　furthermore; again; after all; more and more
+1|源氏|げんじ　Genji (the character in the Genji Monogatari)
+1|奇数|きすう　odd number​
+1|偶数|ぐうすう　even number​
+1|正数|せいすう　positive number​
+1|負数|ふすう　negative number​
+1|節句|せっく　seasonal festival
+1|蝶々|ちょうちょう　butterfly
+1|蜂蜜|はちみつ　honey
+1|紫|むらさき　purple; violet
+1|笹|ささ　bamboo grass
+1|軒端|のきば　eaves; edge of the eaves
+1|揺れる|ゆれる　to shake; to sway; to rock; to swing; to tremble
+1|竹林|ちくりん　bamboo thicket; bamboo grove
+1|海岸|かいがん　seashore; coast; seaside
+1|短冊|たんざく　tanzaku; poem slip; narrow strip of paper on which Japanese poems are written
+1|砂|すな　sand; grit; fine gravel
+1|一軒|いっけん　one house
+1|縁側|えんがわ　engawa; external corridor on the outer side of traditional Japanese houses
+1|腹痛|ふくつう　stomach ache; abdominal pain
+1|腹筋|ふっきん　abdominal muscles; abs; sit-up (exercise)​
+1|筋肉痛|きんにくつう　muscular pain; myalgia; aching muscles
+1|叱る|しかる　to scold; to chide; to rebuke; to reprimand
+1|出身|しゅっしん　one's origin (e.g. city, country, parentage, school)
+1|北東部|ほくとうぶ　northeastern part; the northeast
+1|東西南北|とうざいなんぼく　east, west, south and north​
+1|逸れる|それる　to turn away; to veer away; to deviate (e.g. of a conversation); to digress
+1|最高裁判所|さいこうさいばんしょ　Supreme Court
+1|裁判所|さいばんしょ　court; courthouse
+1|皇居|こうきょ　Imperial Palace (of Japan); imperial residence
+1|国会|こっかい　National Diet; legislative assembly of Japan (1947-)
+1|下院|かいん　lower house; lower legislative chamber​
+1|上院|じょういん　upper house; upper legislative chamber; senate​
+1|天皇|てんのう　Emperor of Japan
+1|帰省|きせい　homecoming; returning home​
+1|締める|しめる　to tie; to fasten; to tighten​; to wear (necktie, belt); to put on​
+1|締め切り|しめきり　deadline; closing; cut-off​
+1|張る|はる　to stick; to paste; to affix​; to stretch; to spread
+1|威張る|いばる　to put on airs; to act big; to throw one's weight about; to be overbearing
+1|しっくり来る|しっくりくる　to feel right; to sit well with one; to be happy about
+1|ガスの元栓|ガスのもとせん　gas valve
+1|眺望|ちょうぼう　view; vista; panorama; outlook; prospect​
+1|眺める|ながめる　to look at; to gaze at; to watch; to stare at​
+1|大工|だいく　carpenter
+1|生活態度|せいかつたいど　way of living; manner of living; lifestyle
+1|大騒ぎ| おおさわぎ　clamor; uproar; tumult; furor​
+1| どんちゃん騒ぎ|どんちゃんさわぎ　merrymaking; high jinks; drunken revelry; spree​
+1|騒ぎ|さわぎ　uproar; disturbance
+1|燥ぐ|はしゃぐ　to make merry; to frolic; to be in high spirits​
+1|影響|えいきょう　influence; effect; impact​
+1|地域|ちいき　area; region; district; locality​
+1|開放|かいほう　opening (a door, window, etc.); leaving open​; opening up (e.g. to the public)
+1|介護|かいご　nursing; care; caregiving; caring​
+1|落石|らくせき　falling rocks; fallen rocks
+1|決勝|けっしょう　decision of a contest; finals (in sports)​
+1|降格|こうかく　demotion; relegation; downgrading
+1|昇進|しょうしん　promotion; advancement; rising in rank​
+1|几帳面|きちょうめん　methodical; precise; meticulous; scrupulous; regular; punctual​
+1|大雑把|おおざっぱ　rough (estimate, summary, etc.); broad; general; sweeping; loose​
+1|王者|おうじゃ　king; monarch; ruler​
+1|言語|げんご　language
+1|過言|かごん　exaggeration; overstatement; saying too much​
+1|特産物|とくさんぶつ　local specialty; special product (of a region)​
+1|準決勝|じゅんけっしょう　semifinal
+1|細やか|ささやか　small; little; tiny; insignificant; humble
+1|祈る|いのる　to pray; to say a prayer; to say grace​; to wish; to hope​
+1|折る|おる　to break; to fracture; to break off; to snap off; to fold; to bend​
+1|乳製品|にゅうせいひん　dairy products​
+1|入院|にゅういん　hospitalization
+1|通院|つういん　going to the hospital regularly for treatment; attending hospital as an outpatient​
+1|奢る|おごる　to treat someone to something; to give someone a treat; to buy (someone a meal, drink, etc.)​
+1|人間宣言|にんげんせんげん　Declaration of Humanity (wherein Hirohito renounced the imperial claim to divinity; January 1, 1946)​
+1|枯山水|こせんすい　traditional (Chinese or Japanese) dry landscape garden
+1|挫く|くじく　to sprain; to twist; to dampen (enthusiasm); to discourage
+1|本場|ほんば　home (of something); place famous for its ...; place of origin; birthplace; cradle​
+1|蜥蜴|トカゲ　lizard
+1|オランダ|オランダ　Netherlands; Holland​
+1|論理的|ろんりてき　logical
+1|纏まる|まとまる　to find resolution; to be settled; to be agreed on; to be completed; to be collected
+1|調味料|ちょうみりょう　seasoning; flavoring; condiment
+1|棚|たな　shelf; ledge; rack​
+1|揃える|そろえる　to collect; to gather; to get together; to arrange; to put in order
+1|訪ねる|たずねる　to visit; to call on; to pay a visit to
+1|尋ねる|たずねる　to ask; to enquire; to inquire​; to search; to look for
+1|同伴する|どうはんする　accompanying; being accompanied by; going with​
+1|お供する|おともする　to attend; to accompany
+1|混ぜる|まぜる　to mix; to stir; to blend​
+1|混む|こむ　to be crowded; to be packed; to be congested
+1|すれ違う|すれちがう　to pass (by) each other; to brush past​; to miss (meeting) each other; to be at odds
+1|経つ|たつ　to pass (of time); to elapse​
+1|流行|りゅうこう　fashion; trend; vogue; craze; fad; popularity​
+1|離れる|はなれる　to be separated; to be apart; to be distant​; to leave; to go away​
+1|拭く|ふく　to wipe; to dry
+1|離す|はなす　to separate; to part; to divide; to keep apart
+1|自閉症|じへいしょう　Autism
+1|華氏|かし　Fahrenheit
+1|摂氏|せっし　Celsius
+1|高熱|こうねつ　high fever; intense heat
+1|症候|しょうこう　symptom
+1|計画を立てる|けいかくをたてる　to make plans
+1|貼る|はる　to stick; to paste; to affix; to stretch; to spread; to form (e.g. ice on a pond)​
+1|兄弟|きょうだい　siblings; brothers
+1|常備|じょうび　(always) having ready; having on hand; being provided with
+1|遠慮|えんりょ　reserve; constraint; restraint; modesty; declining; refraining​ 
+1|交互|こうご　alternate; alternating
+1|茶葉|ちゃっば　tea leaf; tea leaves
+1|本音|ほんね　real intention; motive; true opinion; what one really thinks
+1|損得|そんとく　loss and gain; advantage and disadvantage
+1|勘定|かんじょう　calculation; computation; count; bill; check; account
+1|流行る|はやる　to be popular; to come into fashion; to be prevalent; to spread widely
+1|盛況|せいきょう　success; prosperity; boom
+1|得する|とくする　to make a profit
+1|思い出|おもいで　memories; recollections; reminiscence
+1|記憶|きおく　memory; recollection; remembrance; storage (computing)
+1|大体|だいたい　generally; on the whole; mostly; almost; nearly
+1|希望|きぼう　hope; wish; aspiration; (bright) prospects; expectation
+1|関心を持つ|かんしんをもつ　to be interested in; to take an interest in; to care about​
+1|大人しい|おとなしい　gentle; quiet; mild; meek; tame
+1|定番|ていばん　standard item; usual thing; a classic; go-to-choice; staple
+1|正直|しょうじき　honest; frank; candid; straightforward
+1|積極的|せっきょくてき　positive; assertive; active; proactive; aggressive
+1|消極的|しょうきょくてき　negative; passive; half-hearted; unmotivated
+1|不注意|ふちゅうい　carelessness; inattention; thoughtlessness; negligence​
+1|意外|いがい　unexpected; surprising
+1|結構な|けっこうな　splendid; nice; wonderful; sufficient; satisfactory; no, thank you
+1|派手な|はでな　showy; loud; flashy; gaudy
+1|地味な|じみな　plain; simple; subdued; sober; reserved (behaviour, attitude etc)
+1|洒落|しゃれ　joke; pun; jest; wordplay; smartly dressed, stylish (na-adjective)
+1|障害者|しょうがいしゃ　disabled person; person with a (physical or mental) disability
+1|向け|むけ　intended for ...; oriented towards ...; aimed at ...
+1|比べる|くらべる　to compare; to make a comparison (between)
+1|対象|たいしょう　target; object (of worship, study, etc.); subject (of taxation, etc.); coverage
+1|行う|おこなう　to perform; to do; to conduct oneself; to carry out
+1|行い|おこない　deed; act; action; conduct; behavior
+1|下記|かき　the following​
+1|上記|じょうき　above-mentioned; above-named; above
+1|国民健康保険|こくみんけんこうほけん　national health insurance
+1|卒業生|そつぎょうせい　graduate; alumnus; alumna
+1|出席を取る|しゅっせきをとる　to call the roll; to take attendance
+1|含有|がんゆう　containing (an ingredient, mineral, etc.)
+1|含む|ふくむ　to contain; to comprise; to have; to hold; to include; to bear in mind; to understand
+1|更生期|こうせいき　change of life; menopause
+1|魔女|まじょ　witch
+1|オカルト|オカルト　occult
+1|金縛り|かなしばり　binding hand and foot; sleep paralysis; temporary feeling of paralysis
+1|千秋楽|せんしゅうらく　final day of a performance; final show; final day of tournament (sumo)
+1|霊|れい　soul; spirit; departed soul; ghost
+1|優勝|ゆうしょう　overall victory; championship; winning the title
+1|取り付かれる|とりつかれる　to be possessed (by a spirit, demon, etc.); to be possessed (by an idea, delusion, etc.); to be obsessed (with)
+1|お互い様|おたがいさま　we are of equal status in this regard; we are in the same boat; the feeling is mutual
+1|古文|こぶん　ancient writing (Edo-period or older); classical literature
+1|古典|こてん　classic (work, esp. book); the classics
+1|漢文|かんぶん　Chinese classical writing; Chinese classics; writing composed entirely of kanji
+1|紫式部|むらさきしきぶ　Murasaki Shikibu (978-1016) (author of the Genji Monogatari)
+1|源氏物語|げんじものがたり　The Tale of Genji (Heian-period classic)
+1|神隠し|かみかく　mysterious disappearance; being spirited away
+1|先端|せんたん　pointed end; tip; point; cusp (of a leaf, crescent moon, etc.); apex (of a curve)
+1|端|はし　end (e.g. of street); tip; point; edge; margin; beginning; start; first; odds and ends
+1|一言|ひとこと　single word; a few words; brief comment
+1|極める|きわめる　to carry to extremes; to go to the end of something; to reach the limits of something
+1|営業|えいぎょう　business; trade; operations; sales
+1|就職|しゅうしょく　finding employment; getting a job
+1|指示|しじ　indication; denotation; designation; instructions; directions
+1|当時|とうじ　at that time; in those days
+1|現在|げんざい　the present; present time; now
+1|担当者|たんとうしゃ　person in charge (of an area of work, etc.); person responsible; contact (person)
+1|現場|げんば　actual spot; scene (of a crime, accident, etc.); (on) site; (on) the ground; (in) the field
+1|小売り店|こうりてん　retail store; retail shop
+1|為|ため　good; advantage; benefit; sake; purpose; objective; consequence; result
+1|芋づる式に|いもづるしきに　(appearing, occurring) one after another​
+1|隔てる|へだてる　to separate (by distance, time, etc.); to isolate; to partition; to divide; to alienate
+1|隔離|かくり　isolation; segregation; separation; quarantine
+1|尽くす|つくす　to use up; to exhaust; to run out of; to devote oneself (to); to do to exhaustion
+1|護る|まもる　to protect; to guard; to defend; to keep (a promise); to abide (by the rules); to obey
+1|お天道様|おてんとさま　the sun; Sol; providence; heaven; god
+1|つまみ食い|つまみぐい　eating with one's fingers; snatched food; secret eating; embezzlement; flirting
+1|叱る|しかる　to scold; to chide; to rebuke; to reprimand
+1|身につく|みにつく　to master (e.g. a skill); to become accustomed to (e.g. a lifestyle); to acquire (e.g. a habit)
+1|光栄|こうえい　honor; glory; privilege
+1|流行語大賞|りゅうこうごたいしょう　buzzword of the year
+1|悪口|わるぐち　(verbal) abuse; speaking ill of people; bad-mouthing; name-calling; slander; abusive language
+1|噂話|うわさばなし　gossip
+1|活躍|かつやく　activity (esp. energetic or successful); great efforts; active participation
+1|実行|じっこう　execution (e.g. of a plan); carrying out; (putting into) practice; action; execution (of a program)
+1|意地悪|いじわる　malicious; ill-tempered; unkind; mean; nasty
+1|経営|けいえい　management; administration; operation; running (a business); conducting
+1|注目|ちゅうもく　notice; attention; observation
+1|予想外|よそうがい　unexpected; unforeseen; strange
+1|お金を下ろす|おかねをおろす　to withdraw money; to take money out
+1|延ばす|のばす　to grow long (e.g. hair, nails)​; to lengthen; to extend; to reach out; to smooth out
+1|延長戦|えんちょうせん　extended game; overtime; extra time; extra innings
+1|縺れる|もつれる　to tangle; to get tangled; to get entangled; to have poor control over (one's tongue, feet, etc.)
+1|絡まる|からまる　to be entwined; to be involved
+1|恐がり|こわがり　coward; timid person
+1|小野|おの　plain; field
+1|大野|おおの　large field
+1|屋敷|やしき　residence; estate; grounds; premises; mansion
+1|掛け布団|かけぶとん　duvet; bed cover; coverlet; quilt; comforter
+1|敷き布団|しきぶとん　futon (laid on the floor); (Japanese) mattress; underquilt; sleeping mat​
+1|訴える|うったえる　to raise; to bring to (someone's attention); to appeal to (reason, emotions etc); to complain
+1|損害賠償|そんがいばいしょう　restitution; damages; indemnity; compensation
+1|償う|つぐなう　to make up for; to compensate for; to indemnify; to recompense; to redeem (e.g. a fault); to atone for
+1|損する|そんする　to lose (money, etc.); to suffer a loss; to miss (e.g. an opportunity); to come to nothing; to harm; to spoil
+1|起訴|きそ　prosecution; indictment
+1|そっくり|そっくり　all; altogether; entirely; completely​; exactly alike; spitting image of
+1|討論|とうろん　debate; discussion
+1|評論|ひょうろん　criticism; critique; review; comment; critical essay
+1|非常に|ひじょうに　very; extremely; exceedingly​
+1|評論家|ひょうろんか　critic; reviewer; commentator
+1|抜群|ばつぐん　outstanding; excellent; exceptional; distinguished; unrivaled; surpassing (e.g. beauty); beyond compare
+1|抜きん出る|ぬきんでる　to surpass; to outdo; to excel; to be far better; to stand out; to be outstanding
+1|一方|いっぽう　one way; the other way; one direction; on the one hand; on the other hand
+1|下線|かせん　underline; underscore
+1|大抵|たいてい　mostly; ordinarily; usually; generally; probably
+1|心理|しんり　state of mind; mentality; psychology
+1|心理学|しんりがく　psychology
+1|デマ|デマ　false rumor; misinformation
+1|きちんと|きちんと　properly; accurately; exactly; precisely; neatly; orderly
+1|其処で|そこで　so; accordingly; now; then; therefore
+1|企業|きぎょう　enterprise; business; company; corporation
+1|起業|きぎょう　starting a business; promotion of enterprise; entrepreneurship
+1|実業家|じつぎょうか　businessperson; entrepreneur
+1|確かめる|たしかめる　to make sure; to check; to ascertain; to confirm; to verify
+1|試す|ためす　to try (out); to have a try (at); to test; to put to the test
+1|肝試し|きもだめし　test of courage (by going to a frightening place, e.g. a graveyard)
+1|試合|しあい　match; game; bout; contest
+1|訳す|やくす　to translate; to interpret​
+1|行う|おこなう　to perform; to do; to conduct oneself; to carry out
+1|繰り返す|くりかえす　to repeat; to do over again
+1|流れる|ながれる　to stream; to flow (liquid, time, etc.); to be washed away; to drift; to spread; to circulate
+1|脱がす|ぬがす　to take off (another's clothes); to strip someone (of their clothes); to undress
+1|濡れる|ぬれる　to get wet
+1|びしょ濡れ|びしょぬれ　sopping wet; dripping wet; sodden; drenched; soaked
+1|夕立|ゆうだち　(sudden, heavy) shower (on a summer afternoon or evening); evening shower
+1|猫舌|ねこじた　dislike of very hot food or drink; inability to take hot food; cat tongue
+1|祝う|いわう　to celebrate; to congratulate; to observe (a festival); to pray for
+1|悩み事|なやみごと　matter causing distress; something causing worry
+1|捕らぬ狸の皮算用|とらぬたぬきのかわざんよう　counting one's chickens before they're hatched; counting raccoon dog skins before they have been caught​
+1|得る|える　to get; to earn; to acquire; to procure; to gain; to win; to understand
+1|与える|あたえる　to give (esp. to someone of lower status); to bestow; to grant; to confer; to present; to provide; to offer
+1|落ち葉|おちば　falling leaves
+1|近寄る|ちかよる　to approach; to draw near
+1|剥ぐ|はぐ　to tear off; to peel off; to rip off; to strip off; to strip of (clothes, rank, etc.); to deprive of
+1|争う|あらそう　to compete; to contest; to contend; to quarrel; to argue
+1|闘う|たたかう　to make war (on); to wage war (against); to go to war (with); to fight (with)
+1|通じる|つうじる　to be open (to traffic); to lead to; to communicate (with); to pass; to get through to
+1|思いつく|おもいつく　to think of; to hit upon; to come into one's mind; to remember
+1|思い出|おもいで　memories; recollections; reminiscence
+1|思い出す|おもいだす　to recall; to remember; to recollect
+1|思いやる|おもいやる　to sympathize with; to sympathise with; to feel for; to be considerate of; to worry about
+1|呆れる|あきれる　to be amazed; to be shocked; to be astonished; to be disgusted; to be fed up
+1|決闘|けっとう　duel; shoot-out
+1|死闘|しとう　life or death struggle; mortal combat
+1|夢中|むちゅう　absorbed in; immersed in; crazy about; obsessed with; within a dream
+1|暮らす|くらす　to live (on, by, etc.); to lead a life; to get along; to make a living; to earn a livelihood
+1|生活|せいかつ　life; living; livelihood; (one's) living
+1|納金|のうきん　payment
+1|滞納|たいのう　falling behind (with a payment); non-payment; default; delinquency
+1|支払う|しはらう　to pay
+1|納める|おさめる　to put (into); to put away (in); to store (in); to contain; to obtain; to pay (fees, taxes etc.)
+1|憎悪|ぞうお　hatred; abhorrence; loathing; detestation
+1|憎む|にくむ　to hate; to detest
+1|恨む|うらむ　to bear a grudge against; to resent; to blame; to curse; to feel bitter towards
+1|形式|けいしき　form (as opposed to substance); format; form; style
+1|周囲|しゅうい　surroundings; circumference
+1|範囲|はんい　extent; scope; sphere; range; span
+1|他人|たにん　another person; other people; others; unrelated person (i.e not related by blood); outsider
+1|本人|ほんにん　the person in question; the person themselves; said person
+1|別人|べつじん　different person; another person; someone else; changed man
+1|渋滞|じゅうたい　(traffic) congestion; traffic jam; gridlock; delay; stagnation
+1|自慢|じまん　pride (in one's achievements, possessions, etc.); self-praise; boast
+1|解決|かいけつ　settlement; solution; resolution
+1|解答|かいとう　answer; solution
+1|埋まる|うまる　to be buried; to be covered; to be surrounded; to overflow; to be crowded; to be repaid (e.g. debt); to be replenished
+1|埋める|うめる　to bury (e.g. in the ground); to fill up (e.g. audience fills a hall); to cause to be packed; to plug (a gap);
+1|開会式|かいかいしき　opening ceremony
+1|反省会|はんせいかい　evaluation meeting; postmortem session; review meeting
+1|素人|しろうと　amateur; layman; ordinary person; novice
+1|玄人|くろうと　expert; professional; master; connoisseur
+1|演奏|えんそう　musical performance
+1|検査|けんさ　inspection (e.g. customs, factory); examination; test; check; scan (e.g. MRI, PET); audit
+1|水質|すいしつ　water quality
+1|治療|ちりょう　(medical) treatment; care; therapy; cure; remedy
+1|医療|いりょう　medical treatment; medical care
+1|予防|よぼう　prevention; protection (against); precaution
+1|手術|しゅじゅつ　surgery; operation; procedure; skill with one's hands; sleight of hand
+1|理解|りかい　understanding; comprehension; appreciation
+1|誤解|ごかい　misunderstanding
+1|誤る|あやまる　to make a mistake (in); to commit an error; to do incorrectly; to mislead; to lead astray
+1|完成|かんせい　completion; perfection; accomplishment
+1|謝る|あやまる　to apologize (apologise); to refuse; to decline
+1|やり取り|やりとり　giving and taking; exchange (of letters); arguing back and forth; (conversational) exchange​
+1|代表|だいひょう　representation; representative; delegate; delegation; leader
+1|影響|えいきょう　influence; effect; impact
+1|合図|あいず　sign; signal; cue
+1|共通|きょうつう　common; shared; mutual; to be common (to); to be shared (by)
+1|強調|きょうちょう　emphasis; stress; highlighting; underlining; underscoring
+1|省略|しょうりゃく　omission; leaving out; abbreviation
+1|申請|しんせい　application; request; petition
+1|挑戦|ちょうせん　challenge; defiance; dare; attempt; try
+1|新生|しんせい　rebirth; new birth; nascent
+1|生産|せいさん　production; manufacture
+1|商売|しょうばい　trade; business; commerce
+1|平均|へいきん　average; mean; balance; equilibrium
+1|不足|ふそく　insufficiency; deficiency; shortage; lack; dissatisfaction; discontent; complaint​
+1|保護|ほご　protection; safeguard; guardianship; custody; preservation; conservation
+1|証明|しょうめい　proof; testimony; demonstration; verification; certification
+1|証書|しょうしょ　document (of proof); certificate; paper; bond; deed
+1|揃える|そろえる　to collect; to gather; to get together; to complete (a collection); to arrange; to put in order
+1|消費|しょうひ　consumption; expenditure; spending
+1|知名度|ちめいど　degree of familiarity; popularity; name recognition; notoriety
+1|溜める|ためる　to amass; to accumulate; to store; to leave unpaid
+1|貯める|ためる　to save up (money)
+1|混じる|まじる　to be mixed; to be blended with; to be combined​; to associate with; to mingle with; to join
+1|溶かす|とかす　to melt; to liquefy; to thaw; to dissolve (in a liquid); to lose (money; through gambling, etc.)
+1|溶く|とく　to mix (e.g. water with flour); to dissolve (salt in water, paint, etc.); to mix in; to scramble (eggs); to stir
+1|抜ける|ぬける　to come out; to fall out; to be omitted; to be missing; to escape; to fade; to leave (a meeting)
+1|知る|しる　to know; to be aware (of); to be conscious (of); to learn (of); to sense; to feel; to understand; to experience
+1|英知|えいち　wisdom; intelligence; sagacity
+1|含有|がんゆう　containing (an ingredient, mineral, etc.)
+1|知恵|ちえ　wisdom; wit; sagacity; sense; intelligence
+1|禁物|きんもつ　thing that should be (carefully) avoided; something forbidden; taboo
+1|油断|ゆだん　negligence; carelessness; inattention; unpreparedness
+1|行事食|ぎょうじしょく　festive food; food associated with a particular seasonal celebration
+1|蛸|たこ　octopus; fool; idiot
+1|見通し|みとおし　unobstructed view; perspective; visibility; vista; forecast; outlook; insight
+1|文房具|ぶんぼうぐ　stationery
+1|最良|さいりょう　the best; ideal​
+1|再利用|さいりよう　reuse; recycling
+1|一括払い|いっかつばらい　lump-sum payment; paying the entire sum in one transaction
+1|優先|ゆうせん　preference; priority; precedence; right of way
+1|産出|さんしゅつ　production; output; turning out
+1|生産高|せいさんだか　yield; output; production
+1|神経|しんけい　nerve (anatomy); nerves; sensitivity
+1|奇跡|きせき　miracle; wonder; marvel
+1|足跡|あしあと　footprints
+1|軌跡|きせき　tire track; traces of a person or thing; path one has taken
+1|新鮮|しんせん　fresh
+1|鮮魚|せんぎょ　fresh fish
+1|肺|はい　lung
+1|胸いっぱい|むねいっぱい　getting a lump in one's throat; overflowing with feelings; chest full of; lungs full of
+1|収入|しゅうにゅう　income; earnings; revenue; proceeds; takings; receipts​
+1|新月|しんげつ　new moon; first day of the lunar month; crescent moon
+1|満月|まんげつ　full moon
+1|三日月|みかづき　crescent moon; young moon
+1|半月|はんげつ　half-moon​; half a month
+1|くしゃみ|くしゃみ　sneeze; sneezing; spoken twice in response to someone sneezing as a charm against an early death​ (expression)
+1|落花生|らっかせい　peanut
+1|保護者|ほごしゃ　guardian; protector; patron; parent
+1|咳|せき　cough; coughing; tussis
+1|ほこり|ほこり　dust
+1|寿命|じゅみょう　lifespan; life; lifetime; service life; end of an object's (useful) life
+1|様相|ようそう　aspect; phase; condition
+1|頻繁|ひんぱん　frequent; incessant
+1|宅配便|たくはいびん　express home delivery service
+1|印鑑|いんかん　stamp; seal​
+1|物品|ぶっぴん　goods; articles
+1|生物学|せいぶつがく　biology
+1|顧客|こきゃく　customer; client; patron
+1|総計|そうけい　total; sum total; total amount
+1|罰金|ばっきん　fine; penalty
+1|不良|ふりょう　bad; poor; inferior; defective; delinquent; hooligan
+1|脅かす|おどかす　to threaten; to menace; to intimidate​; to startle; to frighten;  to scare
+1|攪拌|かくはん　agitation; stirring; whipping; beating
+1|弾む|はずむ　to spring; to bound; to bounce; to be encouraged; to get lively
+1|発達障害|はったつしょうがい　developmental disability; developmental disorder
+1|難儀|なんぎ　troublesome (person, task, etc.); difficult; suffering; hardship; trouble
+1|中耳炎|ちゅうじえん　otitis media; middle-ear infection​
+1|模試|もし　mock exam; practice exam; practice test
+1|近頃|ちかごろ　lately; recently; nowadays; terribly; awfully; extremely
+1|侵攻|しんこう　invasion
+1|親知らず|おやしらず　wisdom tooth; not knowing who one's birth parents are
+1|賞状|しょうじょう　certificate of merit; testimonial
+1|既読|きどく　already read
+1|既に|すでに　already; previously; before; unmistakably; in the first place
+1|スルー|スルー　ignoring; looking the other way; letting pass; passing through
+1|概念|がいねん　general idea; concept; notion
+1|荒廃|こうはい　ruin; destruction; devastation; waste; decay
+1|廃止|はいし　abolition; discontinuance; discontinuation; repeal; annulment
+1|材料|ざいりょう　materials; ingredients; grounds (for a decision etc); basis; evidence
+1|人材|じんざい　capable person; talented person; human resources; personnel
+1|資材|しざい　(raw) material
+1|老眼鏡|ろうがんきょう　reading (farsighted) glasses; spectacles for the aged
+1|眼鏡|めがね　glasses; eyeglasses; spectacles​; judgement; discrimination; insight
+1|故|ゆえ　reason; cause; circumstances; grounds​; because of; as a result of
+1|停電|ていでん　power outage; power failure; power cut; blackout
+1|停止|ていし　stoppage; coming to a stop; halt; standstill; ceasing (movement, activity, etc.); suspension (of operations)
+1|ほっと|ほっと　with a feeling of relief; with a sigh of relief​; deeply (sigh)​
+1|充電器|じゅうでんき　(battery) charger; AC adapter
+1|単身赴任|たんしんふにん　(intra-company) job transfer away from one's family
+1|求人|きゅうじん　recruiting; job offer; job vacancy
+1|募集|ぼしゅう　recruitment; invitation; selection; advertisement; taking applications; raising (funds, donations, etc.)
+1|ダウン症|ダウンしょう　Down's syndrome
+1|開催|かいさい　holding (a conference, exhibition, etc.); opening; hosting (e.g. the Olympics)
+1|友情|ゆうじょう　friendship; fellowship; camaraderie
+1|列席|れっせき　attendance; presence
+1|改めて|あらためて　another time; again; over again; once again; anew; formally; intentionally
+1|今宵|こよい　this evening; tonight​
+1|伺う|うかがう　to call on someone; to call at a place; to pay a visit; to ask; to hear; to be told
+1|立派|りっぱ　splendid; fine; handsome; elegant; praiseworthy; worthy; legitimate; lawful
+1|成長|せいちょう　growth; development; growing up; becoming an adult
+1|両親|りょうしん　parents; both parents
+1|間違いなく|まちがいなく　clearly; unmistakably; certainly; without a doubt
+1|是非|ぜひ　certainly; without fail; right and wrong; pros and cons
+1|建国|けんこく　founding of a nation
+1|段落|だんらく　paragraph; end; conclusion
+1|杖|つえ　cane; walking stick; staff; wand
+1|移す|うつす　to transfer (to a different place, group, etc.); to change; to move (something); to swap
+1|章|しょう　chapter; section; medal; badge
+1|時間を守る|じかんをまもる　to be punctual
+1|暗記|あんき　memorization; learning by heart
+1|年配|ねんぱい　(approximate) age; years; elderly; old; aged
+1|未満|みまん　less than; under; below
+1|以下|いか　not exceeding ...; not more than ...; ... and under; ... and below; ... or fewer​; less than <= (including)
+1|願う|ねがう　to desire; to wish; to hope; to beg; to request
+1|宛先|あてさき　address; destination
+1|ボンビー|ボンビー　poor; poverty-stricken; destitute​
+1|閉鎖|へいさ　closing; closure; shutdown; lockout
+1|付近|ふきん　neighborhood; vicinity; surrounding area; district
+1|半導体|はんどうたい　semiconductor
+1|海峡|かいきょう　channel (e.g. between two land masses); strait
+1|貧乏|びんぼう　poverty-stricken; destitute; poor
+1|雄|おす　male (animal, plant)​
+1|雌|めす　female (animal, plant)
+1|酸素|さんそ　oxygen 
+1|炭素|たんそ　carbon
+1|二酸化炭素|にさんかたんそ　carbon dioxide; CO2
+1|女々しい|めめしい　effeminate; unmanly; cowardly; sissy
+1|乳酸|にゅうさん　lactic acid​
+1|除け|よけ　protection; repellent
+1|密閉|みっぺい　shutting tightly; making airtight
+1|近頃|ちかごろ　lately; recently; nowadays
+1|薬味|やくみ　condiment (e.g. grated or chopped topping like daikon, wasabi, ginger, green onion, red pepper); spice​
+1|中毒|ちゅうどく　poisoning; addiction
+1|三度目の正直|さんどめのしょうじき　third time lucky; third time's the charm
+1|沢山|たくさん　a lot; lots; plenty; many; a large number; enough; sufficient
+1|巧み|たくみ　skillful; dexterous; masterful; cunning​; craftsmanship
+1|匠|たくみ　craftsman; artisan; workman; carpenter​; craft; skill; dexterity
+1|超人|ちょうじん　superman; superwoman
+1|寡黙|かもく　untalkative; quiet; uncommunicative
+1|巨匠|きょしょう　master; masterhand; maestro​
+1|達人|たつじん　master; expert​
+1|常に|つねに　always; constantly; at all times; habitually​
+1|長生き|ながいき　longevity; long life​
+1|長寿|ちょうじゅ　long life; longevity​; long-lived; long-running (e.g. TV program)​
+1|大晦日|おおみそか　New Year's Eve​
+1|年越しそば|としこしそば　soba noodles eaten at night on New Year's Eve
+1|一見さん|いちげんさん　first-time customer (of an inn or a restaurant); chance customer; customer without an introduction from a regular customer
+1|常連客|じょうれんきゃく　regular customer​
+1|お連れ|おつれ　companion; company​
+1|かけ蕎麦|かけそば　soba in hot broth; soba without any trimmings​
+1|手持ち|てもち　in hand; on hand; on one; in stock; in store​
+1|通じて|つうじて　through; via; by (using); throughout (e.g. the year); all through
+1|絆|きずな　bond (between people); (emotional) ties; bonds; relationship; connection; link​
+1|気がする|きがする　to feel (as if); to have a feeling (that); to have a hunch (that); to get a sense (that)​; to feel like doing; to want to do
+1|揃って|そろって　all together; in a body; en masse; all alike
+1|構わない|かまわない　no problem; it doesn't matter
+1|取引先|とりひきさき　customer; client; client company; business connection; trade partner​
+1|凝ってる|こってる　to become stiff; to get absorbed into; to become obsessed with; to get hooked on​
+1|如何しても|どうしても　by all means; at any cost; no matter what; surely; willingly or unwillingly
+1|店主|てんしゅ　shopkeeper; storekeeper; proprietor of a shop​
+1|聞かせる|きかせる　to let (someone) hear; to tell (e.g. a story); to inform (of)​; to make (someone) listen
+1|脅かす|おどかす　to threaten; to menace; to intimidate; to startle; to frighten
+1|脅し|おどし　a threat
+1|罰金|ばっきん　fine; penalty
+1|大衆食堂|たいしゅうしょくどう　cheap restaurant; eating place (house)​; Bistro
+1|幼児|ようじ　young child; toddler​; child over 1 but not yet of school age
+1|孤児|こじ　orphan; person without friends (only with こじ)
+1|孤独|こどく　solitude; loneliness; isolation​
+1|幼稚園|ようちえん　kindergarten (in Japan, non-compulsory education from age 3 until primary school); preschool​
+1|孤児院|こじいん　orphanage
+1|小児科医|しょうにかい　pediatrician
+1|抽選|ちゅうせん　lottery; raffle; drawing (of lots); balloting​
+1|老眼鏡|ろうがんきょう　reading (farsighted) glasses; spectacles for the aged​

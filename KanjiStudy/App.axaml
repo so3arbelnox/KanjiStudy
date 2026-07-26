@@ -3,8 +3,9 @@
              xmlns:converters="using:Avalonia.Markup.Xaml.Converters"
              x:Class="KanjiStudy.App"
              xmlns:local="clr-namespace:KanjiStudy"
-             RequestedThemeVariant="Default">
-             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+             RequestedThemeVariant="Dark">
+             <!-- Forced to "Dark" since the app's custom palette is dark throughout; "Default" follows the OS
+                  theme and mismatches light-themed control chrome (checkboxes, text boxes) against it. -->
 
     <Application.DataTemplates>
 	    <local:ViewLocator></local:ViewLocator>
@@ -29,5 +30,6 @@
     <FontFamily x:Key="Phosphor">/Assets/Fonts/Phosphor.ttf#Phosphor</FontFamily>
     <FontFamily x:Key="PhosphorBold">/Assets/Fonts/Phosphor-Bold.ttf#Phosphor-Bold</FontFamily>
     <FontFamily x:Key="PhosphorFill">/Assets/Fonts/Phosphor-Fill.ttf#Phosphor-Fill</FontFamily>
+    <x:Double x:Key="ButtonFontSize">20</x:Double>
   </Application.Resources>
 </Application>

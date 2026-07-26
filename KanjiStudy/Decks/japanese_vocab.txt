@@ -1,0 +1,579 @@
+Title=Japanese Vocab
+----
+1|高楼|こうろう　tall building; tower
+1|荒城|こうじょう　ruined castle
+1|宴|うたげ・えん　party; banquet; feast
+1|巡る|めぐる　to go around; to make a circle around; to surround; to travel around
+1|杯|はい・さかずき　sake cup; cup for alcoholic beverages; counter for cupfuls
+1|何処|どこ・いずこ　where; what place
+1|陣営|じんえい　camp; faction; military camp
+1|枝|えだ・え　branch; bough; limb; twig; sprig; spray
+1|千代|ちよ　thousand years
+1|霜|しも　frost
+1|影|かげ　shadow; silhouette; figure; shape; reflection; image
+1|雁|がん・かり　wild goose
+1|夜半|やはん・よわ　middle of the night; dead of night
+1|照り|てり　sunshine; dry weather; luster; lustre
+1|為|ため　for what purpose; good; benefit; welfare; sake; purpose; objective; aim
+1|為る|する・なる　to do; to carry out; to perform
+1|移る|うつる　to move (house); to transfer (department); to change the target of interest or concern; to elapse (passage of time)
+1|嵐|あらし　storm; tempest
+1|垣|かき　fence; hedge; railing
+1|尚|なお　still; yet; more; greater; further
+1|葛|くず・かずら　kudzu; Japanese arrowroot
+1|栄枯|えいこ　vicissitudes; ups and downs
+2|大富豪|だいふごう　very rich person; multimillionaire; billionaire
+2|囚人|しゅうじん　prisoner; convict
+2|偶々|たまたま　by chance; by accident; unexpectedly; OR occasionally; once in a while
+2|偶に|たまに　occasionally; once in a while; now and then
+2|偶然|ぐうぜん　by chance; unexpectedly, accidentally
+2|保険計理人|ほけんけいりにん　actuary
+2|貴様|きさま　you; you bastard; you son of a bitch!
+2|貴方|あなた　you
+2|親子|おやこ　parent and child
+2|そっくり|そっくり　all; entirely; completely (adverb) exactly alike; spitting image of (adjective)
+2|御歳暮|おせいぼ　year-end gift OR end of the year
+2|数字|すうじ　numeral; digit; numeric character
+2|数学|すうがく　mathematics
+2|恩返し|おんがえし　paying back a favor; repayment (of an obligation, kindness, etc.)
+2|輝夜姫|かぐやひめ　Kaguya-Hime (main character of Taketori Monogatari)
+2|国歌|こっか　national anthem
+2|島国|しまぐに　island country
+2|御恩|ごおん　(received) favor; kindness or blessing (favor)
+2|恩義|おんぎ　obligation; favor; debt of gratitude
+2|孫悟空|そんごくう　Sun Wukong (Journey to the West); Monkey King OR Son Goku (Dragonball)
+2|内向的|ないこうてき　introverted; withdrawn
+2|外交的|がいこうてき　extroverted; outgoing
+2|内気|うちき　shy; bashful; timid; reserved
+2|社交的|しゃこうてき　sociable
+2|上半身|じょうはんしん　upper half of the body; upper body
+2|下半身|かはんしん　lower half of the body; nether parts
+2|向上|こうじょう　elevation; rise; improvement; advancement; progress
+2|成長|せいちょう　growth; development; growing up; becoming an adult
+2|成人式|せいじんしき　coming-of-age ceremony
+2|語彙|ごい　vocabulary; lexicon; lexis; terminology
+2|救急車|きゅうきゅうしゃ　ambulance
+2|御前|おまえ　you OR before (a god, nobleman, etc.); in front of
+2|告げる|つげる　to tell; to inform; to announce OR to indicate; to signal; to mark
+2|予告|よこく　(advance) notice; preliminary announcement; warning OR trailer (for a film, TV show, etc.)
+2|牧場|ぼくじょう　farm (livestock); stock farm; ranch; station OR pasture, meadow, grazing land
+2|畏敬の念|いけいのねん　feeling of awe and veneration; reverential feelings
+3|上司|じょうし　(one's) superior; (one's) boss; the higher-ups​
+3|親会社|おやがいしゃ　parent company
+3|洗車|せんしゃ　car washing
+3|緑茶|りょくちゃ　green tea
+3|煎茶|せんちゃ　green tea
+3|初詣
+|はつもうで　first shrine visit of the New Year
+3|初日の出|はつひので　first sunrise of the year; sunrise on New Year's Day
+3|お節料理|おせちりょうり　traditional food eaten during the New Year's holidays
+3|年越し蕎麦|としこしそば　soba noodles eaten at night on New Year's Eve
+3|七七日|しちしちにち　49th day after death (In Buddhist traditions)
+3|四十九日|しじゅうくにち　forty-ninth day after a person's death (In Buddhist traditions)
+3|国教|こっきょう　state religion; official religion
+3|似る|にる　to resemble; to look like; to be like; to be alike; to be similar; to take after
+3|子宮|しきゅう　womb; uterus
+3|姑|しゅうとめ　mother-in-law
+3|嫁|よめ　bride; (one's) daughter-in-law
+3|官|かん　government; government service; the bureaucracy
+3|僅か|わずか　a little; a few; small; slight
+3|微か|かすか　faint; dim; weak
+3|火の用心|ひのようじん　be careful about fire; watch out for fire
+3|力士|りきし　sumo wrestler; rikishi​
+3|明かり|あかり　light; glow; lamp​
+3|逸れる|はぐれる　o lose sight of (one's companions); to stray from
+3|戸締まり|とじまり　locking up (doors and windows); fastening the doors
+3|お見合い|おみあい　(formal) meeting with a view to marriage; interview with a prospective spouse​
+3|旧暦|きゅうれき　Japan's old (lunisolar) calendar
+3|嬉しい|うれしい　happy; glad; pleased; delighted; overjoyed
+3|仲人|なこうど　matchmaker
+3|姿見|すがたみ　full-length mirror
+4|教授|きょうじゅ　professor
+4|社会学|しゃかいがく　sociology
+4|講師|こうし　speaker; lecturer
+4|海底|かいてい　bottom of the ocean; seafloor; seabed
+4|交通|こうつう　traffic; transportation; communication; exchange (of ideas, etc.); intercourse
+4|交通の便|こうつうのべん　transportation access; access to (public) transportation
+4|沸かす|わかす　to boil; to heat (a liquid); to prepare (a bath, hot drink)
+4|沸く|わく　to grow hot (e.g. water); to boil
+4|沸騰|ふっとう　boiling; seething; becoming heated (in a debate)
+4|冷やし|ひやし　chilled; chilling
+4|冷や麦|ひやむぎ　thin udon noodles (served chilled)
+4|当地|とうち　this place; here
+4|特産|とくさん　being produced in a particular region; local specialty
+4|日中|にっちゅう　daytime; during the day
+4|苛々|いらいら　to get irritated; to get annoyed; to be on the edge
+4|苛立つ|いらだつ　to be irritated; to get annoyed; to lose one's patience
+4|煮立つ|にたつ　to boil; to simmer
+4|断つ|たつ　to sever; to cut off; to supress; to exterminate; to abstain (from); to give up
+4|謝る|あやまる　to apologize; to refuse; to decline
+4|垣根|かきね　hedge; fence
+4|洗い場|あらいば　washing place (for laundry or tableware), place for washing oneself in a bathroom
+4|召す|めす　to call; to summon
+4|左右|さゆう　left and right
+4|左打ち|ひだりうち　hitting left-handed
+4|左折|させつ　turning to the left; left turn
+4|右折|うせつ　turning to the right
+4|金槌|かなづち　hammer
+4|儒教|じゅきょう　Confucianism
+4|浴槽|よくそう　bathtub
+4|排水口|はいすいこう　drain; overflow
+6|屋台|やたい　cart; stall; stand
+6|嫌々期 |いやいやてき　terrible twos
+6|眺める|ながめる　to look at; to gaze at; to watch; to stare at​
+6|弾み|はずみ　bounce; spring; rebound
+6|弾力 |だんりょく　elasticity; flexibility​
+6|難破船|なんぱせん　shipwreck
+6|眺望|ちょうぼう　view; vista; panorama; outlook; prospect​
+6|満ち潮|まんちょう　high tide; high water; full tide
+6|運動神経|うんどうしんけい　motor nerve; reflexes; athletic ability
+6|鮫|さめ　shark
+6|硬派|こうは　hard-liners; diehards; hawks​
+6| マイブーム| マイブーム　current obsession; current kick; personal obsession
+6|流行|りゅうこう　fashion; trend; vogue; craze; fad; popularity​
+6|流行り|はやり　fashion; fad; vogue; craze​
+6|同心円|どうしんえん　concentric circles​
+6|成るべく|なるべく　as (much) as possible; as (much) as one can; wherever practicable; if possible
+6|ホッチキス|ホッチキス　stapler; paper fastener​
+6|周り|まわり　circumference; girth; surroundings; neighbourhood; neighborhood; vicinity​
+6|珊瑚礁|さんごしょう　coral reef
+6|平泳ぎ|ひらおよぎ　breaststroke (swimming)
+6|背泳ぎ|せおよぎ　backstroke (swimming)
+7|接待|せったい　entertainment (of guests; esp. in the corporate world); treating (to food and drinks); wining and dining
+7|奢る|おごる　to treat (someone) to (something); to give (someone) a treat; to buy (someone a meal, drink, etc.)​
+7|哲学|てつがく　Philosophy
+7|菜食主義|さいしょくしゅぎ　Vegetarianism
+7|商業|しょうぎょう　commerce; trade; business
+7|漁業|ぎょぎょう　fishing industry; fishery
+7|農業|のうぎょう　agriculture; farming
+7|廊下|ろうか　corridor; hallway
+7|記録|きろく　record; document; minutes; recording; putting on record; keeping a record (of); writing down
+7|録画|ろくが　(video) recording
+7|録音|ろくおん　(audio) recording​
+7|住処|じゅうしょ　address; residence; domicile
+7|アジト|アジト　hideout; secret base of operations; safe house​
+7|反戦運動|はんせんしゅぎしゃ　anti-war movement
+7|苛める|いじめる　to ill-treat; to bully; to torment; to pick on
+7|塩水|しおみず　salt water; brine
+7|潮水|しおみず　seawater
+7|満潮|まんちょう　high tide; high water; full tide​
+7|干潮|かんちょう　low tide; low water; ebb​
+7|テトラポッド|テトラポッド　tetrapod; tetrahedral concrete structure used in breakwaters
+7|針|はり　needle; pin​
+7|焦げる|こげる　to burn; to scorch; to char; to singe
+7|焦げ茶色|こげちゃいろ　dark brown; olive brown
+7|鶴|つる　Crane (bird)
+7|山脈|さんみゃく　mountain range; mountain belt
+7|灯台|とうだい　lighthouse; old-fashioned interior light fixture comprising a wooden pole with an oil-filled dish and a wick atop it
+7|却下|きゃっか　rejection; dismissal
+8|沈む|しずむ　to sink; to go under; to submerge; to go down (the sun); to set
+8|温暖化|おんだんか　global warming
+8|北極|ほっきょく　North Pole
+8|解ける|とける　to be solved; to be resolved
+8|湿度|しつど　level of humidity
+8|過ごす|すごす　to spend (time); to pass; to overdo
+8|梅雨|つゆ　rainy season
+8|湿気|しっけ　moisture; humidity; dampness
+8|生える|はえる　to grow; to spring up; to sprout
+8|画面|がめん　screen (of a TV, computer etc.); image on a screen
+8|近づく|ちかづく　to approach; to draw near; to get close
+8|缶詰|かんづめ　canned food
+8|記事|きじ　article; news story; report; account
+8|取り上げる|とりあげる　to pick up; to adopt (a proposal); to take up (a topic); to take issue with; to report (news)
+8|旅行先|りょこうさき　destination (in travel); place where on is staying
+8|刑事|けいじ　(police) detective
+8|神奈川県|かながわけん　Kanagawa Prefecture
+8|役柄|やくがら　role
+8|夫|おっと　husband
+8|真犯人|しんはんにん　the real criminal; true culprit
+8|小銭|こぜに　small changes; coins
+8|馳走|ちそう　treating someone (to food or drink); dinner; running about
+8|吉本|よしもと　Yoshimoto (name)
+8|展示会|てんじかい　exhibition
+8|村上隆|むらかみたかはし　Murakami Takahashi (artist)
+8|開かれる|ひらかれる　to be open
+8|洗剤|せんざい　detergent
+8|黄ばむ|きばむ　to turn yellow
+8|帰省|きせい　homecoming; returning home
+8|法事|ほうじ　Buddhist memorial service
+8|道路|どうろ　road; highway
+8|急な坂|きゅうなさか　sudden drop; percipitous slope
+8|煙|けむり　smoke; fumes
+8|地面|じめん　ground; earth's surface; land
+8|上昇|じょうしょう　rising; ascending; climbing
+8|這う|はう　to crawl; to creep; to slither
+8|忠告|ちゅうこく　advice; warning
+8|山火事|やまかじ　forest fire; wildfire; bushfire
+8|灰|はい　ashes
+8|訪れる|おとずれる　to visit; to call on
+8|帰省|きせい　homecoming; returning home
+8|威張る|いばる　to put on airs; to act big; to throw one's weight about; to be overbearing
+8|偉そう|えらそう　self-important; important-looking; pompous; proud
+8|しっくり来る|しっくりくる　to feel right; to sit well with one; to be happy about
+8|眺める|ながめる　to look at; to gaze at; to watch; to stare at
+8|眺望|ちょうぼう　view; vista; panorama; outlook; prospect
+8|諦める|あきらめる　to give up; to abandon (hope, plans); to resign oneself (to)
+8|締める|しめる　to tie; to fasten; to tighten; to wear (necktie, belt)
+8|元栓|もとせん　stopcock (gas, water); main valve; main tap; stop tap
+8|這う|はう　to crawl; to creep; to go on all fours
+8|崩れる|くずれる　to collapse; to crumble; to get out of shape; to become disorganized
+8|張る|はる　to stick; to paste; to affix; to stretch; to tighten
+8|貼る|はる　to stick; to paste; to affix; to stretch; to tighten
+8|山崩れ|やまくずれ　landslide
+8|人工|じんこう　artificial; man-made; human work; human skill
+8|酒蔵|さかぐら　sake brewery
+8|態度|たいど　attitude; manner; behaviour; demeanour; bearing
+8|生活態度|せいかつたいど　way of living; manner of living; lifestyle
+8|呆れる|あきれる　to be amazed; to be shocked; to be astonished
+8|締め切り|しめきり　deadline; closing; cut-off​
+9|乾く|かわく　to get dry
+9|渇く|かわく　to be thirsty; to feel thirsty​
+9|嗅ぐ|かぐ　to sniff; to smell
+9|叩く|たたく　to strike; to hit; to beat; to knock; to pound
+9|殴る|なぐる　to strike; to hit; to beat; to punch​
+9|蹴る|ける　to kick
+9|抱く|だく　to hold in one's arms (e.g. a baby); to embrace; to hug
+9|倒れる|たおれる　to fall (over, down); to collapse
+9|倒す|たおす　to throw down; to bring down; to blow down; to fell
+9|起こる|おこる　to occur; to happen
+9|起こす|おこす　to raise; to pickup; / to wake up; / to cause; to bring about
+9|訪ねる|たずねる　to visit; to call on; to pay a visit to
+9|尋ねる|たずねる　to ask; to enquire; to inquire
+9|黙る|だまる　to be silent; to say nothing
+9|飼う|かう　to keep (a pet or other animal); to have; to own; to raise; to rear; to feed
+9|数える|かぞえる　to count; to enumerate
+9|乾かす|かわかす　to dry (clothes, etc.); to desiccate
+9|畳む|たたむ　to fold (clothes, umbrella)​
+9|奢る|おごる　to treat (someone) to (something); to give (someone) a treat
+9|預かる|あずかる　to look after; to take care of; to keep; to hold on to; to keep in custody
+9|預ける|あずける　to leave (in someone's keeping); to put (in someone's care); to entrust (someone) with; to deposit
+9|教わる|おそわる　to be taught; to learn; to take lessons in
+9|降りる|おりる　to descend (e.g. a mountain); to go down; to come down​
+9|降ろす|おろす　to take down; to bring down; to lower; / to drop off (a passenger); to let off
+9|治る|なおる　to get better; to get well; to recover (from an illness); to be cured; to be restored
+9|治す|なおす　to cure; to heal
+9|直す|なおす　to repair; to mend; to fix
+10|なくす|to lose (something)
+10|なくなる|to be lost (e.g. luggage); to be missing
+10|うまれる|to be born
+10|うむ|to give birth; to bear (child); to lay (eggs)
+10|であう|to meet (by chance); to come across; to run across; to encounter
+10|たずねる|to visit; to call on; to pay a visit to
+10|つきあう|to associate with; to keep company with; to go out with
+10|きく|to hear; to listen (to music)
+10|はやる|to be popular; to come into fashion; to be prevalent
+10|たつ|to pass (of time); to elapse
+10|まにあう|to be in time (for)
+10|かよう|to go to and from (a place); to go back and forth between; to go to (school, work, etc.)
+10|こむ|to be crowded; to be packed
+10|すれちがう|to pass (by) each other; to brush past; to miss (meeting) each other
+10|かかる|to take (a resource, e.g. time or money); to hang; to start (engines, motors); to be fastened
+10|かける|to hang up (e.g. a coat, a picture on the wall); to put on (e.g. a blanket); to put on (glasses, etc.); to wear (a necklace, etc.); to make (a call)
+10|うごく|to move; to operate;
+10|うごかす|to move; to operate
+10|はなれる|to be seperated; to leave; to go away
+10|はなす|to separate; to part; to divide; to keep apart
+10|ぶつかる|to bump into; to run into; to encounter
+10|ぶつける|to hit (e.g. one's head); to strike
+10|こぼれる|to spill; to fall out of; to overflow​
+10|こぼす|to spill; to drop; to shed (tears)
+10|ふく|to wipe; to dry
+10|かたづく|to be put in order; to be finished
+10|かたづける|to put in order; to clean up; to finish
+10|つつむ|to wrap up; to pack; to bundle; to cover
+10|はる|to stick; to affix; to stretch; to fill; to post (a link, etc. online)
+10|たりる|to be sufficient; to be enough
+10|のこる|to remain; to be left
+10|のこす|to leave (behind); to not finish; to save; to set aside
+10|くさる|to rot; to go bad; to corrode
+10|むける|to peel off; to come off; to be taken off
+10|むく|to peel; to skin; to pare
+10|すべる|to slide; to glide; to slip
+10|つもる|to pile up; to accumulate
+10|つむ|to pile up; to stack; to load (car, ship, etc.); to pack
+10|あく|to open (doors); to open (business); to be empty; to be vacant
+10|あける|to open (a door); to unwrap; to open (a business); to empty; to remove
+10|さがる|to come down; to go down; to fall; to hang; to move back
+10|さげる|to hang; to lower; to reduce; to demote; to move back
+10|ひえる|to grow cold; to get chilly; to cool down
+10|ひやす|to cool; to chill; to cool off; to relax
+10|おりる|to descend (a mountain); to go down; to step down; to quit
+10|おろす|to take down; to bring down; to drop off (a passenger); to withdraw (money)
+10|さめる|to cool down; to get cold; to subside
+10|さます|to cool (from high temp to room temp); to let cool; to dampen
+10|もえる|to burn; to get fired up
+10|もやす|to burn; to be fired up
+10|わく|to grow hot (water); to boil; to get excited; to ferment
+10|わかす|to boil; to heat (a liquid); to prepare (a bath, hot drink); to excite
+10|なる|to sound; to ring; to echo
+10|ならす|to ring; to sound; to chime; to be popular; 
+10|やくだつ|to be useful; to be helpful
+10|やくだてる|to put to use; to make use of
+10|こげる|to burn; to scorch; to singe
+10|こがす|to burn; to scorch; to singe
+10|かざり|decoration; ornament; trimmings
+10|あそび|play; game; pleasure; amusement
+10|あつまり|gathering; meeting; assembly
+10|おしえ|teaching; instruction; teachings
+10|おどり|dance
+10|かんがえ|thinking; thought; view; opinion
+10|かたづけ|tidying up; finishing
+10|てつだい|helper; assistant
+10|はたらき|work; labor; achievement; talent; salary
+10|きまり|rule; regulation; settlement; habit
+10|さわぎ|uprorar; disturbance
+10|しらせ|news; word; tidings; notice
+10|たのみ|request; favor; trust
+10|つかれ|tiredness; fatigue
+10|ちがい|difference; distinction; mistake; error
+10|まちがえ|mistake; error; accident; trouble
+10|はじめ|beginning; start; opening; first
+10|つづき|continuation; next installment
+10|くれ|sunset; sundown; end; close
+10|いき|breath; breathing; harmony
+10|かえり|return; coming back
+10|おくれ|delay; lag; postponement; falling behind
+10|かし|loan; lending; hire; favor
+10|かり|borrowing; debt; loan
+10|かち|win; victory
+10|まけ|defeat; loss
+10|むかえ|meeting; greeting; welcome
+10|はじまり|origin; beginning; start
+10|おわり|end; close; conclusion
+10|もどり|return; reaction; recovery
+10|わかれ|parting; separation; farewell
+10|よろこび|joy; delight; pleasure; congratulations
+10|たのしみ|enjoyment; pleasure; delight; anticipation
+10|わらい|laugh; smile
+10|おどろき|surprise; astonishment; wonder
+10|いかり|anger; rage; fury
+10|かなしみ|sadness; sorrow
+10|かわく|to be thirsty; to feel thirsty
+10|かぐ|to sniff; to smell
+10|たたく|to strike; to hit; to attack; to bash
+10|なぐる|to strike; to hit; to beat; to punch
+10|ける|to kick; to refuse; to reject
+10|だく|to hold in one's arms; to embrace; to hug
+10|たおれる|to fall (over, down); to collapse; to crumble
+10|おきる|to get up; to rise; to wake up; to occur; to take place
+10|おこる|to occur; to happen
+10|おこす|to raise; to wake; to cause; to bring about; to start
+10|たずねる|to ask; to enquire; to search; to look for
+10|よぶ|to call out (to); to summon (a doctor, etc.); to invite
+10|さけぶ|to shout; to cry (out); to scream; to exclaim
+10|だまる|to be silent; to say nothing
+10|かう|to keep (a pet); to have; to own; to raise; to feed
+10|かぞえる|to count; to enumerate
+10|かわく|to get dry
+10|かわかす|to dry (clothes, etc)
+10|たたむ|to fold (clothes); to close (a shop, business)
+10|さそう|to invite; to ask (someone to do); to call (for); to tempt; to lure
+10|おごる|to treat (someone) to (something); to give (someone) a treat
+10|あずかる|to look after; to take care; to keep; to hold on to
+10|あずける|to leave (in someone's keeping); to put (in someone's care)
+10|きまる|to be decided; to be settled; to be fixed; to be arranged
+10|きめる|to decide; to choose; to determine; to make up one's mind
+10|うつる|to be photographed; to be projected
+10|うつす|to copy; to duplicate; to reproduce
+10|おもいだす|to recall; to remember; to recollect
+10|おそわる|to be taught; to learn; to take lessons in
+10|おしえる|to teach; to instruct; to inform
+10|もうしこむ|to apply for; to make an application; to propose (marriage)
+10|ことわる|to refuse; to reject; to dismiss; to decline
+10|みつかる|to be found; to be discovered
+10|みつける|to find; to discover; to come across
+10|つかまる|to be caught; to be arrested
+10|つかまえる|to catch; to capture; to arrest; to seize
+10|のる|to get on (train, plane, bus, ship, etc.); to get in; to board
+10|のせる|to give (someone) a ride; to give a lift
+10|おりる|to descend (a mountain etc); to go down; to come down
+10|おろす|to take down; to bring down; to lower (a hand, flag, shutter, etc.)
+10|なおる|to get mended; to be repaired; to be fixed
+10|なおす|to repair; to mend; to fix; to restore
+10|とくい|satisfaction; pride; one's strong point
+10|にがて|poor (at); weak (in) not very good (at)
+10|ねっしん|zealous; enthusiastic; ardent
+10|むちゅう|absorbed in; immersed in; crazy about; daze; trance
+10|たいくつ|tedious; boring; dull; tiresome
+10|けんこう|healthy; sound; fit
+10|くるしい|painful; difficult; tough; hard; distressing
+10|へいき|cool; calm; composed; all right; OK
+10|くやしい|frustrated (over a failure); annoyed; dissapointed; bitter
+10|かゆい|itchy
+10|おとなしい|gentle; quiet; mild; meek; docile
+10|がまんづよい|patient; persevering
+10|しょうじき|honest; frank; straightforward
+10|けち|stinginess; penny-pinching; miser; cheap
+10|わがまま|selfish; egoist
+10|せっきょくてき|positive; assertive; active; aggressive
+10|しょうきょくてき|negative; passive; half-hearted; unmotivated
+10|まんぞく|satisfaction; contentment; sufficient; adequate
+10|ふあん|anxiety; worry; fear; insecurity; suspense
+10|たいへん|serious; grave; dreadful; terrible; hard
+10|ふちゅうい|carelessness; inattention; thoughtlessness
+10|いがい|unexpected; surprising
+10|けっこう|wonderful; sufficient; not needing (any more of something)
+10|はで|showy; loud; flashy; gaudy
+10|じみ|plain; subdued; sober
+10|おしゃれ|stylish; fashionable; trendy; dressing (oneself) up
+10|まし|better; preferable; least-worth
+10|ふじゆう|discomfort; inconvenience; poverty; want
+10|じゆう|freedom; liberty
+10|せわ|care; looking after; help; assistance; aid
+10|かてい|home; household; family; hearth
+10|きょうりょく|cooperation; collaboration; help; support
+10|かんしゃ|thanks; gratitude; appreciation; thankfulness
+10|おれい|thanks; gratitude; manners; etiquette
+10|おわび|apology
+10|おじぎ|bow; bowing
+10|あくしゅ|handshake
+10|いじわる|malicious; ill-tempered; unkind; mean; nasty
+10|いたずら|mischief; prank; trick; practical joke
+10|せつやく|economising; saving
+10|けいえい|management; administration; operation; running (a business)
+10|はんせい|reflection; reconsideration; introspection; meditation
+10|じっこう|execution (e.g. of a plan); carrying out; (putting into) practice
+10|しんぽ|progress; advance; improvement; development​
+10|へんか|change; variation; alteration; mutation; transition; transformation
+10|はったつ|development; growth
+10|たいりょく|physical strength; power; stamina; endurance
+10|しゅつじょう|participation (in a tournament, match, race, etc.); entry; taking part (in)
+10|かつやく|activity (esp. energetic or successful); great efforts; active participation
+10|きょうそう|competition; contest; rivalry; race
+10|おうえん|aid; assistance; help; support; reinforcement
+10|はくしゅ|clapping hands; applause
+10|にんき|popularity; public favor
+10|うわさ|rumor; report; hearsay; gossip
+10|じょうほう|information; news; report; intelligence
+10|こうかん|exchange; interchange; switching; reciprocity; barter
+10|りゅうこう|fashion; trend; vogue; craze; fad; popularity
+10|せんでん|publicity; advertisement; advertising; propaganda
+10|こうこく|advertisement; advertising
+10|ちゅうもく|notice; attention; observation
+10|つうやく|interpretation
+10|ほんやく|translation
+10|でんごん|(verbal) message; word (from someone)
+10|ほうこく|report; information
+10|ろくが|(video) recording
+10|こんざつ|congestion; crowding; jam
+10|じゅうたい|(traffic) congestion; traffic jam; delay; stagnation
+10|しょうとつ|collision; crash; impact; running into; skirmish; quarrel
+10|ひがい|(suffering) damage; injury; harm
+10|じこ|accident; incident; trouble
+10|じけん|event; affair; incident; case; plot; trouble; scandal
+10|こしょう|fault; trouble; breakdown; failure; being out of order
+10|しゅうり|repair; mending; fixing; servicing
+10|ていでん|power outage; electricity outage; blackout
+10|ちょうし|condition; state of health; shape; tune; tone; rhythm
+10|きんちょう|tension; strain; nervousness; stress
+10|じしん|self-confidence; confidence (in oneself)
+10|じまん|pride; boast
+10|かんしん|admiration; being impressed
+10|かんどう|being deeply moved emotionally; excitement; passion
+10|こうふん|excitement; stimulation; agitation
+10|かんそう|impressions; thoughts; feelings; reactions
+10|よそう|expectation; anticipation; prediction; forecast
+10|せんもん|specialty; special subject of study; area of expertise
+10|けんきゅう|research; study; investigation
+10|ちょうさ|investigation; examination; inquiry
+10|げんいん|cause; origin; source
+10|けっか|result; consequence; outcome; effect
+10|かいけつ|settlement; solution; resolution
+10|かくにん|confirmation; verification; validation; review; check
+10|りよう|use; utilization; utilisation; application
+10|りかい|understanding; comprehension; appreciation
+10|はっけん|discovery; detection; finding
+10|はつめい|invention
+10|かんけい|relation; relationship; connection
+10|だんたい|group; party; team; organization
+10|せんきょ|election
+10|ぜいきん|tax; duty
+10|せきにん|duty; responsibility
+10|しょるい|document; papers
+10|だいめい|title; caption; heading
+10|じょうけん|condition; term; requirement; qualification
+10|しめきり|deadline; closing; cut-off
+10|きかん|period; term; interval
+10|ばい|double; twice (as much); times (as much); -fold
+10|くじ|lottery; lot; raffle; draw
+10|ちかみち|shorter way; shortcut
+10|ちゅうしん|center; middle; heart; core; focus
+10|かず|number; amount
+10|ぐうすう|even number
+10|きすう|odd number
+10|せいすう|positive number
+10|せいすう|integer
+10|ぜんすう|whole number; all
+10|しょうすうてん|decimal point
+10|ぶんすう|fraction
+10|2/3|三分の一
+10|わりあい|rate; ratio; percentage; proportion
+10|けいさん|calculation
+10|ししゃごにゅう|rounding (off; a number); rounding half away from zero
+10|ほうていしき|equation
+10|りょう|quantity; amount; volume; capacity; portion (of food)
+10|めんせき|area (measurement); square measure; size (of land); floor space
+10|たいせき|capacity; volume
+10|いちわり|ten percent
+10|しゃかいか|Social Studies
+10|ちり|Geography
+10|れきし|History​
+10|せかいし|world history; international history
+10|にほんし|Japanese history; history of Japan
+10|こうみんか|(subject of) civics
+10|かがく|Science
+10|せいぶつ|Biology
+10|かがく|Chemistry
+10|ぶんがく|Literature
+10|ごい|Vocabulary
+10|ぶんぽう|Grammar
+10|どっかい|Reading comprehension
+10|ろんぶん|thesis; essay; treatise; paper; article
+10|すうがく|Mathematics
+10|さんすう|arithmetic; calculation
+10|おんがく|Music
+10|びじゅつ|art; fine arts
+10|けんこう|Health
+10|たいいく|Physical education
+10|かていか|home economics
+10|しゅげい|handicrafts
+10|あたり|neighborhood; vicinity; nearby; surroundings​
+10|まわり|circumference; girth​; surroundings
+10|あな|hole; opening; orifice; pit; hollow
+10|れつ|row; line; file; column; queue; rank; procession​
+10|はば|width; breadth; freedom (e.g of thought); latitude
+10|はんい|extent; scope; sphere; range; span​
+10|ないよう|contents; content; substance; matter; detail
+10|なかみ|contents; interior; filling; substance; content
+10|とくちょう|feature; trait; characteristic; peculiarity; distinction​
+10|ふつう|normal; ordinary; regular; usual; common; average
+10|あたりまえ|natural; reasonable; obvious​; commonplace
+10|にせ|imitation; fake; phony; counterfeit; forged; bogus; sham​
+10|べつ|distinction; difference; discrimination​; separate; different
+10|こくせき|nationality; citizenship
+10|せいよう|the West; Western countries
+10|とうよう|the East; (East) Asia
+10|こくさい|international
+10|しぜん|nature
+10|けしき|scenery; scene; landscape
+10|しゅうきょう|religion; religious affiliation; belief; faith; creed​
+10|あい|love; affection; care
+10|くわしい|detailed; full; minute; knowing very well; knowledgeable (about)
+10|こまかい|small; fine; minute; minor; trivial; careful; frugal
+10|あさい|shallow; slight (wound); light (sleep); pale (colour); short (time)
+10|ぬるい|lukewarm; tepid; lenient
+10|ゆたか|abundant; plentiful; rich; ample; rich; open (mind); relaxed; easy
+10|じゅうよう|important; essential; significant; major; key; principal
+10|はげしい|violent; furious; extreme; intense; relentless
+10|そっくり|all; altogether; entirely; completely​; exactly alike (in appearance)
+10|きゅう|sudden; abrupt; unexpected; urgent; percipitious; rapid; swift
+10|てきとう|suitable; proper; appropriate; fit​; perfunctory; half-minded; sloppy
+10|さかん|prosperous; flourishing; popular; widespread
+10|きほんてき|きほんてき　fundamental; basic
+10|ばらばら|scattered; disperse; loose; disconnected
+10|ぼろぼろ|worn-out; ragged; tattered; crumbling; exhausted
+10|しょうせつ|novel; story; (work of) fiction
+10|し|poem; poetry; verse
+10|ずいひつ|essays; miscellaneous writings
+10|でんき|biography; life story
+10|ひょうろん|criticism; critique
