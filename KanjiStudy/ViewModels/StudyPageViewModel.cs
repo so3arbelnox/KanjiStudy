@@ -125,6 +125,12 @@ namespace KanjiStudy.ViewModels
             ? (OperatingSystem.IsAndroid() ? 60 : 90)
             : (OperatingSystem.IsAndroid() ? 22 : 30);
 
+        // The app is locked to landscape on Android, which leaves very little vertical room, so the
+        // select-deck and options screens need to run noticeably more compact there to avoid scrolling.
+        public bool IsCompactLayout => OperatingSystem.IsAndroid();
+        public double OptionsTitleFontSize => OperatingSystem.IsAndroid() ? 16 : 20;
+        public double OptionsSpacing => OperatingSystem.IsAndroid() ? 4 : 8;
+
         public StudyPageViewModel()
         {
             PageName = Data.ApplicationPageNames.Study;

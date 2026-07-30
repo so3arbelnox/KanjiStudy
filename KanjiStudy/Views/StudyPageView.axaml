@@ -7,6 +7,7 @@
              Background="{DynamicResource PrimaryBackground}"
              xmlns:vm="clr-namespace:KanjiStudy.ViewModels"
              xmlns:models="clr-namespace:KanjiStudy.Models"
+             xmlns:input="clr-namespace:Avalonia.Input.TextInput;assembly=Avalonia.Base"
              x:DataType="vm:StudyPageViewModel"
              x:Class="KanjiStudy.Views.StudyPageView">
 
@@ -14,12 +15,41 @@
     <vm:StudyPageViewModel></vm:StudyPageViewModel>
   </Design.DataContext>
 
+  <UserControl.Styles>
+    <!-- Android is locked to landscape, which leaves very little vertical room, so the options
+         screen runs these controls noticeably smaller there to avoid needing to scroll. -->
+    <Style Selector="StackPanel.compact CheckBox">
+      <Setter Property="FontSize" Value="13"></Setter>
+      <Setter Property="Padding" Value="6 0 0 0"></Setter>
+      <Setter Property="MinHeight" Value="26"></Setter>
+    </Style>
+    <Style Selector="StackPanel.compact TextBox">
+      <Setter Property="FontSize" Value="13"></Setter>
+      <Setter Property="Padding" Value="6 2"></Setter>
+      <Setter Property="MinHeight" Value="26"></Setter>
+    </Style>
+    <Style Selector="StackPanel.compact Label">
+      <Setter Property="FontSize" Value="13"></Setter>
+      <Setter Property="Padding" Value="0"></Setter>
+    </Style>
+    <Style Selector="StackPanel.compact TextBlock">
+      <Setter Property="FontSize" Value="13"></Setter>
+    </Style>
+    <Style Selector="StackPanel.compact Button.primary">
+      <Setter Property="FontSize" Value="15"></Setter>
+      <Setter Property="Padding" Value="14 6"></Setter>
+    </Style>
+    <Style Selector="StackPanel.compact Button.transparent">
+      <Setter Property="FontSize" Value="13"></Setter>
+    </Style>
+  </UserControl.Styles>
+
   <Grid Margin="30">
 
     <!-- Select Deck -->
-    <ScrollViewer IsVisible="{Binding IsSelectDeckStage}" HorizontalAlignment="Center" HorizontalScrollBarVisibility="Disabled">
-      <StackPanel Spacing="15" Width="420" Margin="0 20">
-        <Label HorizontalAlignment="Center" FontSize="28" Content="Study"></Label>
+    <Grid IsVisible="{Binding IsSelectDeckStage}" HorizontalAlignment="Center" Width="420" RowDefinitions="Auto,*">
+      <StackPanel Grid.Row="0" Classes.compact="{Binding IsCompactLayout}" Spacing="10" Margin="0 10">
+        <Label HorizontalAlignment="Center" FontSize="{Binding OptionsTitleFontSize}" Content="Study"></Label>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Text="Choose a deck file to start studying."></TextBlock>
         <Button HorizontalAlignment="Center" Click="BrowseForDeck_Click">
           <StackPanel Orientation="Horizontal">
@@ -28,40 +58,39 @@
           </StackPanel>
         </Button>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Foreground="IndianRed" Text="{Binding LoadError}" IsVisible="{Binding HasLoadError}"></TextBlock>
-
-        <StackPanel IsVisible="{Binding HasBundledDecks}" Spacing="8" Margin="0 15 0 0">
-          <TextBlock HorizontalAlignment="Center" Text="Or pick a sample deck:"></TextBlock>
-          <ItemsControl ItemsSource="{Binding BundledDecks}">
-            <ItemsControl.ItemTemplate>
-              <DataTemplate x:DataType="models:BundledDeckOption">
-                <Button HorizontalAlignment="Stretch" Margin="0 3" Tag="{Binding FilePath}" Click="BundledDeck_Click">
-                  <Label Content="{Binding Title}"></Label>
-                </Button>
-              </DataTemplate>
-            </ItemsControl.ItemTemplate>
-          </ItemsControl>
-        </StackPanel>
+        <TextBlock HorizontalAlignment="Center" Text="Or pick a sample deck:" IsVisible="{Binding HasBundledDecks}" Margin="0 5 0 0"></TextBlock>
       </StackPanel>
-    </ScrollViewer>
+
+      <ScrollViewer Grid.Row="1" IsVisible="{Binding HasBundledDecks}" HorizontalScrollBarVisibility="Disabled">
+        <ItemsControl ItemsSource="{Binding BundledDecks}">
+          <ItemsControl.ItemTemplate>
+            <DataTemplate x:DataType="models:BundledDeckOption">
+              <Button HorizontalAlignment="Stretch" Margin="0 3" Tag="{Binding FilePath}" Click="BundledDeck_Click">
+                <Label Content="{Binding Title}"></Label>
+              </Button>
+            </DataTemplate>
+          </ItemsControl.ItemTemplate>
+        </ItemsControl>
+      </ScrollViewer>
+    </Grid>
 
     <!-- Options -->
-    <ScrollViewer IsVisible="{Binding IsOptionsStage}" HorizontalAlignment="Center" HorizontalScrollBarVisibility="Disabled">
-      <StackPanel Spacing="12" Width="420" Margin="0 20">
-        <Label HorizontalAlignment="Center" FontSize="24" Content="{Binding DeckTitle}"></Label>
+    <ScrollViewer IsVisible="{Binding IsOptionsStage}" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalScrollBarVisibility="Disabled">
+      <StackPanel Classes.compact="{Binding IsCompactLayout}" Spacing="{Binding OptionsSpacing}" Width="380" Margin="0 5">
+        <Label HorizontalAlignment="Center" FontSize="{Binding OptionsTitleFontSize}" Content="{Binding DeckTitle}"></Label>
         <TextBlock HorizontalAlignment="Center" Text="{Binding DeckCardCountText}"></TextBlock>
 
-        <CheckBox Content="Limit amount" IsChecked="{Binding LimitAmount}"></CheckBox>
-        <StackPanel Orientation="Horizontal" IsEnabled="{Binding LimitAmount}" Spacing="10">
-          <Label VerticalAlignment="Center" Content="Amount:"></Label>
-          <TextBox Width="100" Text="{Binding Amount}"></TextBox>
+        <StackPanel Orientation="Horizontal" Spacing="{Binding OptionsSpacing}">
+          <CheckBox Content="Limit amount" IsChecked="{Binding LimitAmount}"></CheckBox>
+          <TextBox Width="70" IsEnabled="{Binding LimitAmount}" Text="{Binding Amount}" input:TextInputOptions.ContentType="Digits"></TextBox>
         </StackPanel>
 
         <CheckBox Content="Study a range of card numbers" IsChecked="{Binding UseRange}"></CheckBox>
-        <StackPanel Orientation="Horizontal" IsEnabled="{Binding UseRange}" Spacing="10">
+        <StackPanel Orientation="Horizontal" IsEnabled="{Binding UseRange}" Spacing="{Binding OptionsSpacing}">
           <Label VerticalAlignment="Center" Content="From:"></Label>
-          <TextBox Width="90" Text="{Binding RangeStart}"></TextBox>
+          <TextBox Width="70" Text="{Binding RangeStart}" input:TextInputOptions.ContentType="Digits"></TextBox>
           <Label VerticalAlignment="Center" Content="To:"></Label>
-          <TextBox Width="90" Text="{Binding RangeEnd}"></TextBox>
+          <TextBox Width="70" Text="{Binding RangeEnd}" input:TextInputOptions.ContentType="Digits"></TextBox>
         </StackPanel>
 
         <CheckBox Content="Flip front and back" IsChecked="{Binding ReverseCard}"></CheckBox>
@@ -69,7 +98,7 @@
 
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Foreground="IndianRed" Text="{Binding LoadError}" IsVisible="{Binding HasLoadError}"></TextBlock>
 
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10" Margin="0 5 0 0">
           <Button Classes="transparent" Command="{Binding ChangeDeckCommand}">
             <Label Content="Change Deck"></Label>
           </Button>

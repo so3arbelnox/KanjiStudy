@@ -2,11 +2,130 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             Foreground="AntiqueWhite"
+             mc:Ignorable="d" d:DesignWidth="1100" d:DesignHeight="900"
+             Foreground="{DynamicResource PrimaryForeground}"
+             Background="{DynamicResource PrimaryBackground}"
              xmlns:vm="clr-namespace:KanjiStudy.ViewModels"
+             xmlns:models="clr-namespace:KanjiStudy.Models"
              x:DataType="vm:DeckPageViewModel"
              x:Class="KanjiStudy.Views.DeckPageView">
-  <Design.DataContext><vm:DeckPageViewModel></vm:DeckPageViewModel></Design.DataContext>
-  <Label Content="{Binding Test}"></Label>
+
+  <Design.DataContext>
+    <vm:DeckPageViewModel></vm:DeckPageViewModel>
+  </Design.DataContext>
+
+  <UserControl.Styles>
+    <!-- Android is locked to landscape, which leaves very little vertical room, so the
+         select-deck and edit-card forms run these controls noticeably smaller there to avoid
+         needing to scroll. Same idiom as StudyPageView's Options screen. -->
+    <Style Selector="StackPanel.compact CheckBox">
+      <Setter Property="FontSize" Value="13"></Setter>
+      <Setter Property="Padding" Value="6 0 0 0"></Setter>
+      <Setter Property="MinHeight" Value="26"></Setter>
+    </Style>
+    <Style Selector="StackPanel.compact TextBox">
+      <Setter Property="FontSize" Value="13"></Setter>
+      <Setter Property="Padding" Value="6 2"></Setter>
+      <Setter Property="MinHeight" Value="26"></Setter>
+    </Style>
+    <Style Selector="StackPanel.compact Label">
+      <Setter Property="FontSize" Value="13"></Setter>
+      <Setter Property="Padding" Value="0"></Setter>
+    </Style>
+    <Style Selector="StackPanel.compact TextBlock">
+      <Setter Property="FontSize" Value="13"></Setter>
+    </Style>
+    <Style Selector="StackPanel.compact Button.primary">
+      <Setter Property="FontSize" Value="15"></Setter>
+      <Setter Property="Padding" Value="14 6"></Setter>
+    </Style>
+    <Style Selector="StackPanel.compact Button.transparent">
+      <Setter Property="FontSize" Value="13"></Setter>
+    </Style>
+    <Style Selector="StackPanel.compact Button.danger">
+      <Setter Property="FontSize" Value="15"></Setter>
+      <Setter Property="Padding" Value="14 6"></Setter>
+    </Style>
+  </UserControl.Styles>
+
+  <Grid Margin="30">
+
+    <!-- Select Deck -->
+    <ScrollViewer IsVisible="{Binding IsSelectDeckStage}" HorizontalAlignment="Center" HorizontalScrollBarVisibility="Disabled">
+      <StackPanel Classes.compact="{Binding IsCompactLayout}" Spacing="15" Width="420" Margin="0 20">
+        <Label HorizontalAlignment="Center" FontSize="28" Content="Decks"></Label>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Text="Choose a deck file to browse and edit its cards."></TextBlock>
+        <Button HorizontalAlignment="Center" Click="BrowseForDeck_Click">
+          <StackPanel Orientation="Horizontal">
+            <Label Classes="icon" Content="&#xe34e;"></Label>
+            <Label Content="Choose Deck File"></Label>
+          </StackPanel>
+        </Button>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Foreground="IndianRed" Text="{Binding LoadError}" IsVisible="{Binding HasLoadError}"></TextBlock>
+
+        <StackPanel IsVisible="{Binding HasBundledDecks}" Spacing="8" Margin="0 15 0 0">
+          <TextBlock HorizontalAlignment="Center" Text="Or pick a sample deck:"></TextBlock>
+          <ItemsControl ItemsSource="{Binding BundledDecks}">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate x:DataType="models:BundledDeckOption">
+                <Button HorizontalAlignment="Stretch" Margin="0 3" Tag="{Binding FilePath}" Click="BundledDeck_Click">
+                  <Label Content="{Binding Title}"></Label>
+                </Button>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </StackPanel>
+      </StackPanel>
+    </ScrollViewer>
+
+    <!-- Card List -->
+    <Grid IsVisible="{Binding IsCardListStage}" RowDefinitions="Auto,*">
+      <StackPanel Grid.Row="0" Classes.compact="{Binding IsCompactLayout}" Orientation="Horizontal" Spacing="10" Margin="0 0 0 10">
+        <TextBlock VerticalAlignment="Center" FontSize="20" Text="{Binding DeckTitle}"></TextBlock>
+        <TextBlock VerticalAlignment="Center" Opacity="0.7" Text="{Binding DeckCardCountText}"></TextBlock>
+        <Button Classes="primary" Command="{Binding AddCardCommand}">
+          <Label Content="+ Add card"></Label>
+        </Button>
+        <Button Classes="transparent" Command="{Binding ChangeDeckCommand}">
+          <Label Content="Change Deck"></Label>
+        </Button>
+      </StackPanel>
+
+      <ListBox Grid.Row="1" ItemsSource="{Binding Deck.Cards}" SelectionChanged="CardList_SelectionChanged">
+        <ListBox.ItemTemplate>
+          <DataTemplate x:DataType="models:Card">
+            <TextBlock Text="{Binding Front}" TextTrimming="CharacterEllipsis"></TextBlock>
+          </DataTemplate>
+        </ListBox.ItemTemplate>
+      </ListBox>
+    </Grid>
+
+    <!-- Edit Card -->
+    <ScrollViewer IsVisible="{Binding IsEditCardStage}" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalScrollBarVisibility="Disabled">
+      <StackPanel Classes.compact="{Binding IsCompactLayout}" Spacing="8" Width="380" Margin="0 5">
+        <Label HorizontalAlignment="Center" FontSize="20" Content="{Binding EditScreenTitle}"></Label>
+
+        <TextBlock Text="Front"></TextBlock>
+        <TextBox Text="{Binding EditFront}"></TextBox>
+
+        <TextBlock Text="Back"></TextBlock>
+        <TextBox Text="{Binding EditBack}" TextWrapping="Wrap" AcceptsReturn="False" Height="70"></TextBox>
+
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Foreground="IndianRed" Text="{Binding EditError}" IsVisible="{Binding HasEditError}"></TextBlock>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10" Margin="0 5 0 0">
+          <Button Classes="transparent" Command="{Binding CancelEditCommand}">
+            <Label Content="Cancel"></Label>
+          </Button>
+          <Button Classes="danger" IsVisible="{Binding CanDeleteCard}" Command="{Binding DeleteCardCommand}">
+            <Label Content="Delete"></Label>
+          </Button>
+          <Button Classes="primary" Command="{Binding SaveCardCommand}">
+            <Label Content="Save"></Label>
+          </Button>
+        </StackPanel>
+      </StackPanel>
+    </ScrollViewer>
+
+  </Grid>
 </UserControl>
