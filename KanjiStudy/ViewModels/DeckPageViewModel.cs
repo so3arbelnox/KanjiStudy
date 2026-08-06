@@ -36,14 +36,24 @@ namespace KanjiStudy.ViewModels
 
         // Edit form state
         [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(IsDuplicateFront))]
         private string _editFront = "";
 
         [ObservableProperty]
         private string _editBack = "";
 
+        // Optional - blank means "no card number" (persisted as id 0), same as a bare 2-field
+        // "front|back" line. Card numbers are what Study's id-range filter operates on.
+        [ObservableProperty]
+        private string _editId = "";
+
         [ObservableProperty]
         [NotifyPropertyChangedFor(nameof(HasEditError))]
         private string? _editError;
+
+        [ObservableProperty]
+        [NotifyPropertyChangedFor(nameof(HasAddedMessage))]
+        private string? _addedMessage;
 
         [ObservableProperty]
         [NotifyPropertyChangedFor(nameof(CanDeleteCard))]
@@ -61,6 +71,7 @@ namespace KanjiStudy.ViewModels
 
         public bool HasLoadError => !string.IsNullOrEmpty(LoadError);
         public bool HasEditError => !string.IsNullOrEmpty(EditError);
+        public bool HasAddedMessage => !string.IsNullOrEmpty(AddedMessage);
 
         public bool IsSelectDeckStage => Stage == DeckStage.SelectDeck;
         public bool IsCardListStage => Stage == DeckStage.CardList;
@@ -68,6 +79,13 @@ namespace KanjiStudy.ViewModels
 
         public bool CanDeleteCard => !IsNewCard;
         public string EditScreenTitle => IsNewCard ? "New Card" : "Edit Card";
+
+        // Warns (without blocking save) when another card in the deck already has this front text -
+        // legitimate decks can have intentional duplicates (e.g. homographs), so this is advisory only.
+        public bool IsDuplicateFront => Deck is not null
+            && !string.IsNullOrWhiteSpace(EditFront)
+            && Deck.Cards.Any(card => card != _editingCard
+                && string.Equals(card.Front.Trim(), EditFront.Trim(), StringComparison.OrdinalIgnoreCase));
 
         // Android is locked to landscape, which leaves very little vertical room, so the
         // select-deck and edit-card forms need to run more compact there to avoid scrolling.
@@ -138,7 +156,9 @@ namespace KanjiStudy.ViewModels
             IsNewCard = true;
             EditFront = "";
             EditBack = "";
+            EditId = "";
             EditError = null;
+            AddedMessage = null;
             Stage = DeckStage.EditCard;
         }
 
@@ -148,7 +168,9 @@ namespace KanjiStudy.ViewModels
             IsNewCard = false;
             EditFront = card.Front;
             EditBack = card.Back;
+            EditId = card.Id == 0 ? "" : card.Id.ToString();
             EditError = null;
+            AddedMessage = null;
             Stage = DeckStage.EditCard;
         }
 
@@ -157,8 +179,14 @@ namespace KanjiStudy.ViewModels
         {
             _editingCard = null;
             EditError = null;
+            AddedMessage = null;
             Stage = DeckStage.CardList;
         }
+
+        // Dismiss the "card added" confirmation as soon as the user starts typing the next
+        // entry, rather than leaving it up until the following save.
+        partial void OnEditFrontChanged(string value) => AddedMessage = null;
+        partial void OnEditBackChanged(string value) => AddedMessage = null;
 
         [RelayCommand]
         private void SaveCard()
@@ -170,6 +198,7 @@ namespace KanjiStudy.ViewModels
 
             var front = EditFront.Trim();
             var back = EditBack.Trim();
+            var idText = EditId.Trim();
 
             if (string.IsNullOrEmpty(front) || string.IsNullOrEmpty(back))
             {
@@ -183,8 +212,17 @@ namespace KanjiStudy.ViewModels
                 return;
             }
 
+            var id = 0;
+
+            if (!string.IsNullOrEmpty(idText) && !int.TryParse(idText, out id))
+            {
+                EditError = "Card # must be a whole number.";
+                return;
+            }
+
             var cards = new List<Card>(Deck.Cards);
-            var savedCard = new Card(_editingCard?.Id ?? 0, front, back);
+            var savedCard = new Card(id, front, back);
+            var wasNewCard = _editingCard is null;
 
             if (_editingCard is null)
             {
@@ -206,10 +244,32 @@ namespace KanjiStudy.ViewModels
 
             var updatedDeck = new Deck(Deck.Title, Deck.FilePath, cards);
             Deck = updatedDeck;
-            _editingCard = savedCard;
-            IsNewCard = false;
 
-            Persist(updatedDeck);
+            if (!Persist(updatedDeck))
+            {
+                // The in-memory Deck was already updated above - only the file write failed.
+                // Stay on the edit screen with this card so the user sees the failure and can
+                // retry, instead of silently losing the change.
+                _editingCard = savedCard;
+                return;
+            }
+
+            if (wasNewCard)
+            {
+                // Keep the add-card screen open for rapid entry of several cards in a row instead
+                // of bouncing back to the list after every single one.
+                _editingCard = null;
+                EditFront = "";
+                EditBack = "";
+                EditId = "";
+                AddedMessage = $"Added \"{front}\".";
+            }
+            else
+            {
+                _editingCard = null;
+                IsNewCard = false;
+                Stage = DeckStage.CardList;
+            }
         }
 
         [RelayCommand]
@@ -226,24 +286,27 @@ namespace KanjiStudy.ViewModels
             var updatedDeck = new Deck(Deck.Title, Deck.FilePath, cards);
             Deck = updatedDeck;
 
-            Persist(updatedDeck);
+            if (Persist(updatedDeck))
+            {
+                _editingCard = null;
+                Stage = DeckStage.CardList;
+            }
         }
 
-        private void Persist(Deck deck)
+        private bool Persist(Deck deck)
         {
             try
             {
                 DeckWriter.SaveToFile(deck);
                 EditError = null;
-                _editingCard = null;
-                Stage = DeckStage.CardList;
+                return true;
             }
             catch (Exception ex)
             {
-                // The in-memory Deck was already updated above - only the file write failed.
-                // Stay on the edit screen so the user sees the failure and can retry, instead of
-                // silently losing the change the way AppSettingsStore swallows save failures.
+                // A failed save must never look silent - surface it and let the caller decide
+                // how to leave the edit screen state.
                 EditError = $"Saved in the app, but couldn't write the file: {ex.Message}";
+                return false;
             }
         }
 

@@ -1,4 +1,5 @@
-
+Title=jp_lessons
+----
 1|姪|姪　niece
 1|甥|おい　nephew
 1|実子|じっし　biological child; one's own child
@@ -50,7 +51,6 @@
 1|録画|ろくが　(video) recording​
 1|反戦|はんせん　anti-war
 1|活動|かつどう　activity (of a person, organization, animal, volcano, etc.); action; operation
-1|苛める|いじめる　to ill-treat; to bully; to torment; to pick on
 1|塩水|しおみず　salt water; brine
 1|満潮|まんちょう　high tide; high water; full tide
 1|干潮|かんちょう　low tide; low water; ebb​
@@ -122,10 +122,7 @@
 1|締め切り|しめきり　deadline; closing; cut-off​
 1|張る|はる　to stick; to paste; to affix​; to stretch; to spread
 1|威張る|いばる　to put on airs; to act big; to throw one's weight about; to be overbearing
-1|しっくり来る|しっくりくる　to feel right; to sit well with one; to be happy about
 1|ガスの元栓|ガスのもとせん　gas valve
-1|眺望|ちょうぼう　view; vista; panorama; outlook; prospect​
-1|眺める|ながめる　to look at; to gaze at; to watch; to stare at​
 1|大工|だいく　carpenter
 1|生活態度|せいかつたいど　way of living; manner of living; lifestyle
 1|大騒ぎ| おおさわぎ　clamor; uproar; tumult; furor​
@@ -153,7 +150,6 @@
 1|乳製品|にゅうせいひん　dairy products​
 1|入院|にゅういん　hospitalization
 1|通院|つういん　going to the hospital regularly for treatment; attending hospital as an outpatient​
-1|奢る|おごる　to treat someone to something; to give someone a treat; to buy (someone a meal, drink, etc.)​
 1|人間宣言|にんげんせんげん　Declaration of Humanity (wherein Hirohito renounced the imperial claim to divinity; January 1, 1946)​
 1|枯山水|こせんすい　traditional (Chinese or Japanese) dry landscape garden
 1|挫く|くじく　to sprain; to twist; to dampen (enthusiasm); to discourage
@@ -259,7 +255,6 @@
 1|護る|まもる　to protect; to guard; to defend; to keep (a promise); to abide (by the rules); to obey
 1|お天道様|おてんとさま　the sun; Sol; providence; heaven; god
 1|つまみ食い|つまみぐい　eating with one's fingers; snatched food; secret eating; embezzlement; flirting
-1|叱る|しかる　to scold; to chide; to rebuke; to reprimand
 1|身につく|みにつく　to master (e.g. a skill); to become accustomed to (e.g. a lifestyle); to acquire (e.g. a habit)
 1|光栄|こうえい　honor; glory; privilege
 1|流行語大賞|りゅうこうごたいしょう　buzzword of the year
@@ -310,7 +305,6 @@
 1|肝試し|きもだめし　test of courage (by going to a frightening place, e.g. a graveyard)
 1|試合|しあい　match; game; bout; contest
 1|訳す|やくす　to translate; to interpret​
-1|行う|おこなう　to perform; to do; to conduct oneself; to carry out
 1|繰り返す|くりかえす　to repeat; to do over again
 1|流れる|ながれる　to stream; to flow (liquid, time, etc.); to be washed away; to drift; to spread; to circulate
 1|脱がす|ぬがす　to take off (another's clothes); to strip someone (of their clothes); to undress
@@ -330,7 +324,6 @@
 1|闘う|たたかう　to make war (on); to wage war (against); to go to war (with); to fight (with)
 1|通じる|つうじる　to be open (to traffic); to lead to; to communicate (with); to pass; to get through to
 1|思いつく|おもいつく　to think of; to hit upon; to come into one's mind; to remember
-1|思い出|おもいで　memories; recollections; reminiscence
 1|思い出す|おもいだす　to recall; to remember; to recollect
 1|思いやる|おもいやる　to sympathize with; to sympathise with; to feel for; to be considerate of; to worry about
 1|呆れる|あきれる　to be amazed; to be shocked; to be astonished; to be disgusted; to be fed up
@@ -376,7 +369,6 @@
 1|謝る|あやまる　to apologize (apologise); to refuse; to decline
 1|やり取り|やりとり　giving and taking; exchange (of letters); arguing back and forth; (conversational) exchange​
 1|代表|だいひょう　representation; representative; delegate; delegation; leader
-1|影響|えいきょう　influence; effect; impact
 1|合図|あいず　sign; signal; cue
 1|共通|きょうつう　common; shared; mutual; to be common (to); to be shared (by)
 1|強調|きょうちょう　emphasis; stress; highlighting; underlining; underscoring
@@ -391,7 +383,6 @@
 1|保護|ほご　protection; safeguard; guardianship; custody; preservation; conservation
 1|証明|しょうめい　proof; testimony; demonstration; verification; certification
 1|証書|しょうしょ　document (of proof); certificate; paper; bond; deed
-1|揃える|そろえる　to collect; to gather; to get together; to complete (a collection); to arrange; to put in order
 1|消費|しょうひ　consumption; expenditure; spending
 1|知名度|ちめいど　degree of familiarity; popularity; name recognition; notoriety
 1|溜める|ためる　to amass; to accumulate; to store; to leave unpaid
@@ -402,7 +393,6 @@
 1|抜ける|ぬける　to come out; to fall out; to be omitted; to be missing; to escape; to fade; to leave (a meeting)
 1|知る|しる　to know; to be aware (of); to be conscious (of); to learn (of); to sense; to feel; to understand; to experience
 1|英知|えいち　wisdom; intelligence; sagacity
-1|含有|がんゆう　containing (an ingredient, mineral, etc.)
 1|知恵|ちえ　wisdom; wit; sagacity; sense; intelligence
 1|禁物|きんもつ　thing that should be (carefully) avoided; something forbidden; taboo
 1|油断|ゆだん　negligence; carelessness; inattention; unpreparedness
@@ -447,7 +437,6 @@
 1|不良|ふりょう　bad; poor; inferior; defective; delinquent; hooligan
 1|脅かす|おどかす　to threaten; to menace; to intimidate​; to startle; to frighten;  to scare
 1|攪拌|かくはん　agitation; stirring; whipping; beating
-1|弾む|はずむ　to spring; to bound; to bounce; to be encouraged; to get lively
 1|発達障害|はったつしょうがい　developmental disability; developmental disorder
 1|難儀|なんぎ　troublesome (person, task, etc.); difficult; suffering; hardship; trouble
 1|中耳炎|ちゅうじえん　otitis media; middle-ear infection​
@@ -514,7 +503,6 @@
 1|乳酸|にゅうさん　lactic acid​
 1|除け|よけ　protection; repellent
 1|密閉|みっぺい　shutting tightly; making airtight
-1|近頃|ちかごろ　lately; recently; nowadays
 1|薬味|やくみ　condiment (e.g. grated or chopped topping like daikon, wasabi, ginger, green onion, red pepper); spice​
 1|中毒|ちゅうどく　poisoning; addiction
 1|三度目の正直|さんどめのしょうじき　third time lucky; third time's the charm
@@ -545,9 +533,7 @@
 1|如何しても|どうしても　by all means; at any cost; no matter what; surely; willingly or unwillingly
 1|店主|てんしゅ　shopkeeper; storekeeper; proprietor of a shop​
 1|聞かせる|きかせる　to let (someone) hear; to tell (e.g. a story); to inform (of)​; to make (someone) listen
-1|脅かす|おどかす　to threaten; to menace; to intimidate; to startle; to frighten
 1|脅し|おどし　a threat
-1|罰金|ばっきん　fine; penalty
 1|大衆食堂|たいしゅうしょくどう　cheap restaurant; eating place (house)​; Bistro
 1|幼児|ようじ　young child; toddler​; child over 1 but not yet of school age
 1|孤児|こじ　orphan; person without friends (only with こじ)
@@ -556,4 +542,9 @@
 1|孤児院|こじいん　orphanage
 1|小児科医|しょうにかい　pediatrician
 1|抽選|ちゅうせん　lottery; raffle; drawing (of lots); balloting​
-1|老眼鏡|ろうがんきょう　reading (farsighted) glasses; spectacles for the aged​
+1|主張する|しゅっちょう　business trip; official trip​
+1|幸福|こうふく　happiness; well-being; joy; welfare; blessedness​
+1|求める|もとめる　to want; to wish for; to request; to demand; to ask for
+1|造る|つくる　to make; to produce; to manufacture; to build; to construct
+1|気に入る|きにいる　to like; to be pleased with; to be delighted with; to take a liking to
+1|ご無沙汰しております|ごぶさたしております　(formal) It has been a long time, long time no see

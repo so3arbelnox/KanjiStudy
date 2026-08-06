@@ -105,13 +105,22 @@
       <StackPanel Classes.compact="{Binding IsCompactLayout}" Spacing="8" Width="380" Margin="0 5">
         <Label HorizontalAlignment="Center" FontSize="20" Content="{Binding EditScreenTitle}"></Label>
 
+        <TextBlock Text="Card # (optional)"></TextBlock>
+        <TextBox Text="{Binding EditId}" HorizontalAlignment="Left" Width="100" Watermark="e.g. 12"></TextBox>
+
         <TextBlock Text="Front"></TextBlock>
-        <TextBox Text="{Binding EditFront}"></TextBox>
+        <Panel>
+          <TextBox Text="{Binding EditFront}"></TextBox>
+          <Label Classes="icon" Foreground="Orange" HorizontalAlignment="Right" VerticalAlignment="Center"
+                 Margin="0 0 8 0" IsHitTestVisible="False" Content="&#xe4e0;" IsVisible="{Binding IsDuplicateFront}"
+                 ToolTip.Tip="Another card in this deck already has this front text."></Label>
+        </Panel>
 
         <TextBlock Text="Back"></TextBlock>
         <TextBox Text="{Binding EditBack}" TextWrapping="Wrap" AcceptsReturn="False" Height="70"></TextBox>
 
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Foreground="IndianRed" Text="{Binding EditError}" IsVisible="{Binding HasEditError}"></TextBlock>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Foreground="MediumSeaGreen" Text="{Binding AddedMessage}" IsVisible="{Binding HasAddedMessage}"></TextBlock>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="10" Margin="0 5 0 0">
           <Button Classes="transparent" Command="{Binding CancelEditCommand}">
