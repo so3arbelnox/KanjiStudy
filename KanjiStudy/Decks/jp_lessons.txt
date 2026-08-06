@@ -548,3 +548,53 @@ Title=jp_lessons
 1|造る|つくる　to make; to produce; to manufacture; to build; to construct
 1|気に入る|きにいる　to like; to be pleased with; to be delighted with; to take a liking to
 1|ご無沙汰しております|ごぶさたしております　(formal) It has been a long time, long time no see
+1|履歴書|りれきしょ　personal history document; curriculum vitae; resume
+1|名字|みょうじ　surname; family name; last name
+1|記憶にない|きおくにない　not in one's recollection; having no recollection (of); having no memory (of)​
+1|回転|かいてん　rotation; revolution; turn; spin; function; turnover (of goods); flow
+1|転職|てんしょく　change of job; change of occupation; career change​
+1|転ぶ|ころぶ　to fall down; to fall over; to turn out; to play out; to roll; to tumble
+1|福|ふく　good fortune; happiness; blessing; good luck
+1|副業|ふくぎょう　side job; sideline; subsidiary business​
+1|経由|けいゆ　going through; going via; going by way of​
+1|頻度|ひんど　frequency (of occurrence)​
+1|応接室|おうせつしつ　drawing room; parlour; parlor​; reception office
+1|待合室|まちあいしつ　waiting room​
+1|強盗|ごうとう　robber; robbery; burglary​
+1|守衛|しゅえい　(security) guard; caretaker; janitor; doorkeeper; gatekeeper​
+1|努める|つとめる　to endeavor (to do); to endeavour; to try hard; to work hard; to strive; to make an effort
+1|勤め|つとめ　service; duty; business; responsibility; task​
+1|猛暑|もうしょ　heat wave; fierce heat​
+1|怠る|おこたる　to neglect; to be negligent in; to fail; to do; to leave undone; to avoid (doing); to improve (of an illness)
+1|猛々しい|たけだけしい　ferocious; fierce​; audacious; shameless; brazen
+1|怠け者|なまけもの　lazy person; lazy fellow; slothful person​
+1|高山病|こうざんびょう　altitude sickness; mountain sickness​
+1|アクセル|アクセル　accelerator (pedal); gas pedal​
+1|見た目|みため　appearance; look​
+1|お菜|おかず　small dish (usu. one of several accompanying rice); side dish​
+1|主菜|しゅさい　main dish (e.g. meat, fish, but not rice); principal dish​
+1|菜|さい　side dish​
+1|一瞬|いっしゅん　instant; moment; for an instant​
+1|瞬き|まばたき　blink (of eyes); wink​; twinkling (of stars);
+1|睨む|にらむ　to glare at; to scowl at; to glower at​; to estimate; to guess; to suspect
+1|睨めっこ|にらめっこ　game in which two children looking at each other try to make the opponents laugh first
+1|赤飯|せきはん　red rice (beans and mochi) for auspicious occasions​
+1|尾頭付き|おかしらつき　fish served whole (complete with head and tail)​
+1|観念|かんねん　idea; notion; concept; conception​
+1|熱燗|あつかん　hot sake​
+1|発電|はつでん　generation of electricity; power generation​
+1|火力|かりょく　heating power; thermal power​
+1|難度|なんど　degree of difficulty​
+1|ご冥福をお祈りします|ごめいふくをおいのりします　may your soul rest in peace; I pray for your happiness in the afterlife
+1|ラノベ|ラノベ　light novel; young-adult fiction novel, typically illustrated in a manga art style​
+1|廃棄物|はいきぶつ　waste matter; waste; garbage; trash​
+1|負荷|ふか　burdening; bearing; shouldering; imposing; load (electrical, mechanical, etc.); stress; workload
+1|否定|ひてい　denial; negation; repudiation; disavowal​
+1|廃棄|はいき　disposal; abandonment; scrapping; discarding; abolition​
+1|肯定|こうてい　affirmation
+1|賛否|さんぴ　yes and no; for and against​
+1|賛成|さんせい　approval; agreement; support; favor​
+1|供給|きょうきゅう　supply; provision​
+1|需要|じゅよう　demand; need​
+1|儲ける|もうける　to profit; to get; to earn; to gain​
+1|稼ぐ|かせぐ　to earn (income); to make (money)​; to score (points); to gain (time)
