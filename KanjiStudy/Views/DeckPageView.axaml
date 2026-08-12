@@ -51,8 +51,8 @@
   <Grid Margin="30">
 
     <!-- Select Deck -->
-    <ScrollViewer IsVisible="{Binding IsSelectDeckStage}" HorizontalAlignment="Center" HorizontalScrollBarVisibility="Disabled">
-      <StackPanel Classes.compact="{Binding IsCompactLayout}" Spacing="15" Width="420" Margin="0 20">
+    <ScrollViewer IsVisible="{Binding IsSelectDeckStage}" HorizontalAlignment="Stretch" HorizontalScrollBarVisibility="Disabled">
+      <StackPanel HorizontalAlignment="Stretch" Classes.compact="{Binding IsCompactLayout}" Spacing="15" MaxWidth="420" Margin="0 20">
         <Label HorizontalAlignment="Center" FontSize="28" Content="Decks"></Label>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Text="Choose a deck file to browse and edit its cards."></TextBlock>
         <Button HorizontalAlignment="Center" Click="BrowseForDeck_Click">
@@ -101,8 +101,8 @@
     </Grid>
 
     <!-- Edit Card -->
-    <ScrollViewer IsVisible="{Binding IsEditCardStage}" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalScrollBarVisibility="Disabled">
-      <StackPanel Classes.compact="{Binding IsCompactLayout}" Spacing="8" Width="380" Margin="0 5">
+    <ScrollViewer IsVisible="{Binding IsEditCardStage}" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalScrollBarVisibility="Disabled">
+      <StackPanel HorizontalAlignment="Stretch" Classes.compact="{Binding IsCompactLayout}" Spacing="8" MaxWidth="380" Margin="0 5">
         <Label HorizontalAlignment="Center" FontSize="20" Content="{Binding EditScreenTitle}"></Label>
 
         <TextBlock Text="Card # (optional)"></TextBlock>

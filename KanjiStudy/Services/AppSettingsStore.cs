@@ -1,3 +1,4 @@
+using KanjiStudy.Data;
 using System;
 using System.IO;
 using System.Text.Json;
@@ -7,6 +8,12 @@ namespace KanjiStudy.Services
     public class AppSettings
     {
         public string? LastDeckPath { get; set; }
+
+        /// <summary>
+        /// Null means "automatic": pick landscape/portrait from the device class
+        /// (see Services/OrientationService.cs). Non-null is an explicit user override.
+        /// </summary>
+        public AppOrientation? OrientationOverride { get; set; }
     }
 
     /// <summary>

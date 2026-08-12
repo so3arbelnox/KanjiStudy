@@ -12,51 +12,86 @@
 		<vm:MainViewModel></vm:MainViewModel>
 	</Design.DataContext>
 	
-  <Grid Background="{DynamicResource ResourceKey=PrimaryBackground}" ColumnDefinitions="Auto, *">
-    
-      <ContentControl Grid.Column="1" Content="{Binding CurrentPage}"></ContentControl>
-      <Border Grid.Column="0" Padding="{Binding SideMenuPadding}" Background="{DynamicResource ResourceKey=PrimaryBackgroundGradient}" Width="{Binding SideMenuWidth}">
-      <Grid RowDefinitions="*, Auto">
-        <StackPanel Grid.Row="0" Spacing="3">
-          <Image PointerPressed="Image_PointerPressed" Source="avares://KanjiStudy/Assets/Images/kanji_logo_transparent.png" Width="100" IsVisible="{Binding SideMenuExpaned}"></Image>
-          <Image PointerPressed="Image_PointerPressed" Source="avares://KanjiStudy/Assets/Images/kanji_logo_no_text_transparent.png" Width="40" IsVisible="{Binding !SideMenuExpaned}"></Image>
+  <!-- DockPanel rather than a fixed side-rail Grid so the nav can dock left (landscape, a
+       full-height rail) or bottom (portrait, a compact bar) - see MainViewModel.NavDock. -->
+  <DockPanel Background="{DynamicResource ResourceKey=PrimaryBackground}">
 
-          <Button HorizontalAlignment="Stretch" Classes.active="{Binding HomePageIsActive}" Command="{Binding GoToHomeCommand}" Click="Home_Button_Clicked">
-              <StackPanel Orientation="Horizontal">
-                  <Label Classes="icon" Content="&#xe2c2;"></Label>
-			      <Label Content="Home" IsVisible="{Binding SideMenuExpaned}"></Label>
-              </StackPanel>
-          </Button>
-          <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
-              <StackPanel Orientation="Horizontal">
-                  <Label Classes="icon" Content="&#xe270;"></Label>
-			      <Label Content="Options" IsVisible="{Binding SideMenuExpaned}"></Label>
-              </StackPanel>
-          </Button>
-          <Button HorizontalAlignment="Stretch" Classes.active="{Binding StudyPageIsActive}" Command="{Binding GoToStudyCommand}" Click="Home_Button_Clicked">
+    <Border DockPanel.Dock="{Binding NavDock}" Padding="{Binding SideMenuPadding}" Background="{DynamicResource ResourceKey=PrimaryBackgroundGradient}" Width="{Binding NavWidth}" Height="{Binding NavHeight}">
+     <Panel>
+
+      <!-- Landscape: a vertical rail. -->
+      <StackPanel IsVisible="{Binding !IsPortrait}" Spacing="3">
+        <Image PointerPressed="Image_PointerPressed" Source="avares://KanjiStudy/Assets/Images/kanji_logo_transparent.png" Width="100" IsVisible="{Binding ShowExpandedLogo}"></Image>
+        <Image PointerPressed="Image_PointerPressed" Source="avares://KanjiStudy/Assets/Images/kanji_logo_no_text_transparent.png" Width="40" IsVisible="{Binding ShowCollapsedLogo}"></Image>
+
+        <Button HorizontalAlignment="Stretch" Classes.active="{Binding HomePageIsActive}" Command="{Binding GoToHomeCommand}" Click="Home_Button_Clicked">
             <StackPanel Orientation="Horizontal">
-            <Label Classes="icon" Content="&#xe034;"></Label>
-			<Label Content="Study" IsVisible="{Binding SideMenuExpaned}"></Label>
-          </StackPanel>
-          </Button>
-          <Button HorizontalAlignment="Stretch" Classes.active="{Binding DeckPageIsActive}" Command="{Binding GoToDeckCommand}" Click="Home_Button_Clicked">
+                <Label Classes="icon" Content="&#xe2c2;"></Label>
+			    <Label Content="Home" IsVisible="{Binding ShowNavLabels}"></Label>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
             <StackPanel Orientation="Horizontal">
-            <Label Classes="icon" Content="&#xe34e;"></Label>
-			<Label Content="Decks" IsVisible="{Binding SideMenuExpaned}"></Label>
-          </StackPanel>
-          </Button>
-          <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
-            <StackPanel Orientation="Horizontal">
-            <Label Classes="icon" Content="&#xe1a0;"></Label>
-			<Label Content="History" IsVisible="{Binding SideMenuExpaned}"></Label>
-          </StackPanel>
-          </Button>
+                <Label Classes="icon" Content="&#xe270;"></Label>
+			    <Label Content="Options" IsVisible="{Binding ShowNavLabels}"></Label>
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Stretch" Classes.active="{Binding StudyPageIsActive}" Command="{Binding GoToStudyCommand}" Click="Home_Button_Clicked">
+          <StackPanel Orientation="Horizontal">
+          <Label Classes="icon" Content="&#xe034;"></Label>
+			<Label Content="Study" IsVisible="{Binding ShowNavLabels}"></Label>
         </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Stretch" Classes.active="{Binding DeckPageIsActive}" Command="{Binding GoToDeckCommand}" Click="Home_Button_Clicked">
+          <StackPanel Orientation="Horizontal">
+          <Label Classes="icon" Content="&#xe34e;"></Label>
+			<Label Content="Decks" IsVisible="{Binding ShowNavLabels}"></Label>
+        </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Stretch" Click="Home_Button_Clicked">
+          <StackPanel Orientation="Horizontal">
+          <Label Classes="icon" Content="&#xe1a0;"></Label>
+			<Label Content="History" IsVisible="{Binding ShowNavLabels}"></Label>
+        </StackPanel>
+        </Button>
 
-        <Button Classes="transparent" Grid.Row="1" Classes.active="{Binding SettingsPageIsActive}" Command="{Binding GoToSettingsCommand}" Click="Home_Button_Clicked">
+        <Button Classes="transparent" Classes.active="{Binding SettingsPageIsActive}" Command="{Binding GoToSettingsCommand}" Click="Home_Button_Clicked">
             <Label Padding="0 0 0 5" Classes="icon" Content="&#xe272;"></Label>
         </Button>
-      </Grid>  
+      </StackPanel>
+
+      <!-- Portrait: a bottom bar, icon-only, evenly spaced edge-to-edge. A star column between
+           (and around) every button - rather than e.g. a Spacing-based panel - is what makes the
+           gaps and the far-left/far-right padding come out exactly equal regardless of each
+           button's own natural width. FontSize is set per-button (not on the Grid) because the
+           Button style's own Setter for FontSize outranks whatever a plain ancestor would supply
+           by inheritance. -->
+      <Grid IsVisible="{Binding IsPortrait}" ColumnDefinitions="*,Auto,*,Auto,*,Auto,*,Auto,*,Auto,*,Auto,*">
+        <Button Grid.Column="1" FontSize="{DynamicResource PortraitNavButtonFontSize}" Classes.active="{Binding HomePageIsActive}" Command="{Binding GoToHomeCommand}" Click="Home_Button_Clicked">
+          <Label Classes="icon" Content="&#xe2c2;"></Label>
+        </Button>
+        <Button Grid.Column="3" FontSize="{DynamicResource PortraitNavButtonFontSize}" Click="Home_Button_Clicked">
+          <Label Classes="icon" Content="&#xe270;"></Label>
+        </Button>
+        <Button Grid.Column="5" FontSize="{DynamicResource PortraitNavButtonFontSize}" Classes.active="{Binding StudyPageIsActive}" Command="{Binding GoToStudyCommand}" Click="Home_Button_Clicked">
+          <Label Classes="icon" Content="&#xe034;"></Label>
+        </Button>
+        <Button Grid.Column="7" FontSize="{DynamicResource PortraitNavButtonFontSize}" Classes.active="{Binding DeckPageIsActive}" Command="{Binding GoToDeckCommand}" Click="Home_Button_Clicked">
+          <Label Classes="icon" Content="&#xe34e;"></Label>
+        </Button>
+        <Button Grid.Column="9" FontSize="{DynamicResource PortraitNavButtonFontSize}" Click="Home_Button_Clicked">
+          <Label Classes="icon" Content="&#xe1a0;"></Label>
+        </Button>
+        <Button Grid.Column="11" FontSize="{DynamicResource PortraitNavButtonFontSize}" Classes.active="{Binding SettingsPageIsActive}" Command="{Binding GoToSettingsCommand}" Click="Home_Button_Clicked">
+          <Label Classes="icon" Content="&#xe272;"></Label>
+        </Button>
+      </Grid>
+     </Panel>
     </Border>
-  </Grid>
+
+    <!-- Small horizontal breathing room so page content never sits flush against the screen edge
+         (most noticeable on a phone's narrower portrait width) - applies to every page, since
+         they're all hosted through this one ContentControl. -->
+    <ContentControl Padding="12,0" Content="{Binding CurrentPage}"></ContentControl>
+  </DockPanel>
 </UserControl>

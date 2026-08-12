@@ -1,5 +1,6 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using KanjiStudy.Data;
 using KanjiStudy.Models;
 using KanjiStudy.Services;
 using System;
@@ -29,6 +30,7 @@ namespace KanjiStudy.ViewModels
     {
         private static readonly Regex JapaneseCharsRegex = new(@"[぀-ヿ一-鿿＀-￯]+", RegexOptions.Compiled);
 
+        private readonly OrientationService _orientationService;
         private readonly List<Card> _missedCards = new();
         private List<Card> _currentRound = new();
         private int _currentIndex;
@@ -119,20 +121,37 @@ namespace KanjiStudy.ViewModels
         public bool IsStudyingStage => Stage == StudyStage.Studying;
         public bool IsCompleteStage => Stage == StudyStage.Complete;
 
-        // The kanji side is a handful of characters and gets the big font; the reading/translation side can run long, so it gets a smaller one.
-        // Android's screen is much smaller than the desktop window this was tuned for, so both sizes scale down there.
+        // The kanji side is a handful of characters and gets the big font; the reading/translation
+        // side can run long, so it gets a smaller one. A phone's screen is much smaller than the
+        // desktop window this was tuned for, so both sizes scale down there - and in portrait,
+        // width (not height) is the constraint, so the front font backs off a bit further too.
         public double CardFontSize => (CurrentFace == CardFace.Front) ^ ReverseCard
-            ? (OperatingSystem.IsAndroid() ? 60 : 90)
-            : (OperatingSystem.IsAndroid() ? 22 : 30);
+            ? FrontCardFontSize
+            : BackCardFontSize;
 
-        // The app is locked to landscape on Android, which leaves very little vertical room, so the
-        // select-deck and options screens need to run noticeably more compact there to avoid scrolling.
-        public bool IsCompactLayout => OperatingSystem.IsAndroid();
-        public double OptionsTitleFontSize => OperatingSystem.IsAndroid() ? 16 : 20;
-        public double OptionsSpacing => OperatingSystem.IsAndroid() ? 4 : 8;
+        private double FrontCardFontSize => IsPhone
+            ? (_orientationService.IsPortrait ? 50 : 60)
+            : (_orientationService.IsPortrait ? 70 : 90);
 
-        public StudyPageViewModel()
+        private double BackCardFontSize => IsPhone
+            ? (_orientationService.IsPortrait ? 20 : 22)
+            : (_orientationService.IsPortrait ? 26 : 30);
+
+        // A phone's screen leaves very little room, so the select-deck and options screens need
+        // to run noticeably more compact there to avoid scrolling.
+        public bool IsCompactLayout => IsPhone;
+        public double OptionsTitleFontSize => IsPhone ? 16 : 20;
+        public double OptionsSpacing => IsPhone ? 4 : 8;
+
+        private bool IsPhone => _orientationService.DeviceClass == DeviceClass.Phone;
+
+        public StudyPageViewModel() : this(new OrientationService())
         {
+        }
+
+        public StudyPageViewModel(OrientationService orientationService)
+        {
+            _orientationService = orientationService;
             PageName = Data.ApplicationPageNames.Study;
             BundledDecks = LoadBundledDeckOptions();
             TryAutoLoadLastDeck();

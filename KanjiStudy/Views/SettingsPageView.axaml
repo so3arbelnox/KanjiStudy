@@ -12,9 +12,17 @@
     	<Design.DataContext>
 		<vm:SettingsPageViewModel></vm:SettingsPageViewModel>
 	</Design.DataContext>
-  <Grid ColumnDefinitions="*,*" RowDefinitions="Auto, *">
+  <!-- Portrait stacks the two content columns into one (see SettingsPageViewModel.ContentColumns
+       etc.), so this can end up taller than the screen. -->
+  <ScrollViewer HorizontalScrollBarVisibility="Disabled">
+  <Grid RowDefinitions="Auto,Auto,Auto">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"></ColumnDefinition>
+      <ColumnDefinition Width="{Binding RightColumnWidth}"></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+
 	  <!-- Header -->
-      <Grid Grid.ColumnSpan="2">
+      <Grid Grid.ColumnSpan="{Binding HeaderColumnSpan}">
 		  <Image Source="{SvgImage /Assets/Images/background.svg}" Height="100" Stretch="UniformToFill" />
           <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
 			  <Label HorizontalAlignment="Center" Content="Settings"></Label>
@@ -50,6 +58,15 @@
             </Grid>
         </StackPanel>
 
+        <!-- App layout -->
+        <StackPanel Spacing="4">
+            <Label Content="App Layout"></Label>
+            <TextBlock TextWrapping="Wrap" Text="Automatic picks landscape for desktop/tablet and portrait for phones. Changing this rebuilds the app to apply it."></TextBlock>
+            <RadioButton GroupName="Orientation" Content="Automatic (recommended)" IsChecked="{Binding UseAutoOrientation}"></RadioButton>
+            <RadioButton GroupName="Orientation" Content="Landscape" IsChecked="{Binding UseLandscapeOrientation}"></RadioButton>
+            <RadioButton GroupName="Orientation" Content="Portrait" IsChecked="{Binding UsePortraitOrientation}"></RadioButton>
+        </StackPanel>
+
         <!-- Deck locations -->
         <StackPanel>
 		<Label Content="Locations"></Label>
@@ -69,7 +86,7 @@
     </StackPanel>
 
       <!-- Right Side Content -->
-      <StackPanel Grid.Column="1" Grid.Row="1" Spacing="15" Margin="15">
+      <StackPanel Grid.Column="{Binding RightColumn}" Grid.Row="{Binding RightRow}" Spacing="15" Margin="15">
           <!-- Content -->
           <StackPanel>
             <Label Content="Kanji Study"></Label>
@@ -142,4 +159,5 @@
       </StackPanel>
 
   </Grid>
+  </ScrollViewer>
 </UserControl>

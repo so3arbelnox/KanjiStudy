@@ -47,7 +47,7 @@
   <Grid Margin="30">
 
     <!-- Select Deck -->
-    <Grid IsVisible="{Binding IsSelectDeckStage}" HorizontalAlignment="Center" Width="420" RowDefinitions="Auto,*">
+    <Grid IsVisible="{Binding IsSelectDeckStage}" HorizontalAlignment="Stretch" MaxWidth="420" RowDefinitions="Auto,*">
       <StackPanel Grid.Row="0" Classes.compact="{Binding IsCompactLayout}" Spacing="10" Margin="0 10">
         <Label HorizontalAlignment="Center" FontSize="{Binding OptionsTitleFontSize}" Content="Study"></Label>
         <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Text="Choose a deck file to start studying."></TextBlock>
@@ -75,8 +75,8 @@
     </Grid>
 
     <!-- Options -->
-    <ScrollViewer IsVisible="{Binding IsOptionsStage}" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalScrollBarVisibility="Disabled">
-      <StackPanel Classes.compact="{Binding IsCompactLayout}" Spacing="{Binding OptionsSpacing}" Width="380" Margin="0 5">
+    <ScrollViewer IsVisible="{Binding IsOptionsStage}" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalScrollBarVisibility="Disabled">
+      <StackPanel HorizontalAlignment="Stretch" Classes.compact="{Binding IsCompactLayout}" Spacing="{Binding OptionsSpacing}" MaxWidth="380" Margin="0 5">
         <Label HorizontalAlignment="Center" FontSize="{Binding OptionsTitleFontSize}" Content="{Binding DeckTitle}"></Label>
         <TextBlock HorizontalAlignment="Center" Text="{Binding DeckCardCountText}"></TextBlock>
 
